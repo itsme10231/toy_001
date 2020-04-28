@@ -211,7 +211,7 @@ public class PostController extends HttpServlet {
 			List<ScheduleDto> list = dao.getScheduleList(""+pyear+Util.isTwo(smonth), id);
 			
 			Calendar cal = Calendar.getInstance();
-			cal.set(pyear, pmonth);
+			cal.set(pyear, pmonth, 1);
 			
 			int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 			int lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
@@ -227,9 +227,9 @@ public class PostController extends HttpServlet {
 				Map<String, String> map = Util.getCalView(list, pyear, pmonth, i);
 				String titleList = map.get("titleList");
 				
-				result += "<td"+
+				result += "<td class=\""+
 						  (titleList.equals("")?"poss":"imposs")
-						  +">"+i+"</td>";
+						  +"\">"+i+"</td>";
 				if((i+(dayOfWeek-1))%7 == 0){
 					result += "<tr></tr>";
 				}

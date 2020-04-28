@@ -40,8 +40,18 @@
 			});
 		});
 		
-		$(".days").on("click",function(){
+		$(".poss").on("click",function(){
+			$(this).toggleClass("selday");
 			
+			var year = $(this).parent("table").find("input[name='year']").val();
+			var month = $(this).parent("table").find("input[name='month']").val();
+			var day = $(this).text();
+			
+			var daytds = $(this).parent("table").find(".days");
+			
+			if(year +month +daytds.text()){
+				
+			}
 		});
 	});
 
@@ -49,6 +59,7 @@
 </head>
 <body>
 <%
+	Util util = new Util();
 	LoginDto ldto = (LoginDto)session.getAttribute("ldto");
 	String id = ldto.getId();
 	
@@ -66,6 +77,8 @@
 	String yyyyMM = year +Util.isTwo(month+"");
 	List<ScheduleDto> list = dao.getScheduleList(yyyyMM, id);
 	
+	String today = util.getCookie("today", request).getValue();
+	pageContext.setAttribute("today", today);
 %>	
 <table class="mincal" border="1">
 	<tr>

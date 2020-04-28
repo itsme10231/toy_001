@@ -1,3 +1,8 @@
+<%@page import="java.util.Map"%>
+<%@page import="com.sandl.dtos.ScheduleDto"%>
+<%@page import="java.util.List"%>
+<%@page import="com.sandl.daos.MntDao"%>
+<%@page import="com.sandl.dtos.LoginDto"%>
 <%@page import="com.sandl.utils.Util"%>
 <%@page import="java.util.Calendar"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
@@ -11,6 +16,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+<style type="text/css">
+	.imposs{color:"lightgray";}
+</style>
+
 <script type="text/javascript">
 	$(function(){
 		
@@ -89,47 +99,44 @@
 			$(".searchfield").toggle();
 		});
 		
-		$("input[type='date']").on("change",function(){
-			var dinputs = $("input[type='date']");
+		
+		$("select[name=sel]").on("change",function(){
+			var selects = $(this).parent().children();
+			var selyear = selects.eq(0).val();
+			var selmonth = selects.eq(1).val();
 			
-			if(eval("${pageScope.schflag}")){
-				if($(this).is("[name='sdate']")){ //sdate의 값이 변했을때
-					
-					dinputs.eq(1).attr("min",$(this).val());
-					if(compareDate(dinputs.eq(1).val(),dinputs.eq(0).val())){
-						dinputs.eq(1).val($(this).val());
-					}
-					
-				}else{ //edate의 값이 변했을때
-					
-					dinputs.eq(0).attr("max",$(this).val());
-					if(compareDate(dinputs.eq(1).val(),dinputs.eq(0).val())){
-						dinputs.eq(0).val($(this).val());
-					}
+			$.ajax({
+				url:"PostController.do",
+				data:{"command":"ajaxCalendar","selyear":selyear,"selmonth":selmonth},
+				method:"post",
+				dataType:"html",
+				success:function(result){
+					console.log(result);
+					$(this).closest("table").children(".datesT").replaceWith("<h1>dd</h1>");
+				},
+				error: function(){
+					console.log("ajaxError");
 				}
-			}else{
-				if($(this).is("[name='sdate']")){ //sdate의 값이 변했을때
-					dinputs.eq(1).attr("min",$(this).val());
-					if(compareDate(dinputs.eq(1).val(),dinputs.eq(0).val())){
-						dinputs.eq(1).val($(this).val());
-					}
-				}else{ //edate의 값이 변했을때
-					dinputs.eq(0).attr("max",$(this).val());
-					if(compareDate(dinputs.eq(1).val(),dinputs.eq(0).val())){
-						dinputs.eq(0).val($(this).val());
-					}
-				}
+			});
+		});
+		
+		$(".poss").on("click",function(){
+			$(this).toggleClass("selday");
+			
+			
+			var year = $(this).closest(".mincal").find("input[name='year']").val();
+			var month = $(this).closest(".mincal").find("input[name='month']").val();
+			var day = $(this).text();
+			
+			var daytds = $(this).parent("table").find(".days");
+			
+			if(year +month +daytds.text()){
+				
 			}
 		});
-	});
+	}); //onload 종료
 	
-	function compareDate(date1, date2){
-		return eval(replaceAll(date1,"-","")) <= eval(replaceAll(date2,"-","")) ? true: false;
-	}
 	
-	function replaceAll(str, searchStr, replaceStr) {
-		return str.split(searchStr).join(replaceStr);
-	}
 </script>
 </head>
 <body>
@@ -143,20 +150,42 @@
 	String mntn_loc = "";
 	
 	if(schflag!=null){
-		pageContext.setAttribute("caldate", util.formDate(yyyyMMdd));
 		pageContext.setAttribute("schflag", (schflag.equals("Y")?"true":"false"));
 		
 		mntn_code = request.getParameter("mntn_code");
 		mntn_name = request.getParameter("mntn_name");
 		mntn_loc = request.getParameter("mntn_loc");
 		
-	}else{
-		pageContext.setAttribute("caldate", util.formDate(yyyyMMdd));
 	}
+	
+	LoginDto ldto = (LoginDto)session.getAttribute("ldto");
+	String id = ldto.getId();
+	
+	Calendar cal = Calendar.getInstance();
+	
+	int year = cal.get(Calendar.YEAR);
+	int month = cal.get(Calendar.MONTH);
+	String day = yyyyMMdd.substring(6);
+	
+	pageContext.setAttribute("year", year);
+	pageContext.setAttribute("month", month);
+	
+	int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+	int lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+	//스케쥴 화면에 달력 두개 출력, 일정이 있는 일자에는 체크 못함, 시작일보다 전의 날짜나 종료일보다 후의 날짜에는 체크 못함
+	//ajax를 통해 서버단에서 달력을 만들어서 가져온다?
+	
+	MntDao dao = new MntDao();
+	String yyyyMM = yyyyMMdd.substring(0,6);
+	List<ScheduleDto> list = dao.getScheduleList(yyyyMM, id);
+	
+	String today = util.getCookie("today", request).getValue();
+	pageContext.setAttribute("today", today);
 	
 	//schflag는 산 디테일 페이지에서 온 것인지를 판단
 	//=>schflag가 존재할 경우 산 선택기능은 표시되지 않음
 	//=>갈 예정이에요로 왔을시 N, 코멘트 작성후 왔을시 Y
+	//=>Y일 경우 시작일과 종료일은 오늘의 날짜보다 뒤로 갈수 없음
 %>
 <div id="container">
 <h1>일정 추가하기</h1>
@@ -167,15 +196,140 @@
 	<tr>
 		<th>가는 날짜</th>
 		<td>
-			
-			<input type="date" name="sdate" value="${pageScope.caldate}" ${pageScope.schflag eq null?'':'max='+pageScope.caldate}>
+			<table class="mincal" border="1">
+				<tr>
+					<td>
+						<select name="sel">
+							<c:forEach begin="${year-5}" end="${year+5}" var="i">
+								<option 
+									<c:if test="${year eq i}">selected="selected"</c:if>
+								value="${i}">${i}년</option>
+							</c:forEach>
+						</select>
+						<select name="sel">
+							<c:forEach begin="1" end="12" var="i">
+								<option 
+									<c:if test="${month eq i}">selected="selected"</c:if>
+								value="${i}">${i}월</option>
+							</c:forEach>
+						</select>
+						<input type="hidden" name="year" value="<%=year%>">
+						<input type="hidden" name="month" value="<%=month%>">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mincalMonth"><%=year %>. <%=month %></th>
+				</tr>
+				<tr>
+					<th>일</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+					<th>토</th>
+				</tr>
+				<tr>
+					<td colspan='7'>
+						<table class="datesT">
+							<tr>
+							<%
+								for(int i = 0; i < dayOfWeek-1; i++){
+									out.print("<td>&nbsp;</td>");
+								}
+								
+								for(int i = 1; i <= lastDay; i++){
+									Map<String, String> map = Util.getCalView(list, year, month, i);
+									String titleList = map.get("titleList");
+									%>
+									<td class="days <%=map.get("titleList").equals("")? "poss" : "imposs" %> <%=String.valueOf(i).equals(day)?"selday":""%>"><%=i %></td>
+									<%
+									if((i+(dayOfWeek-1))%7 == 0){
+										out.print("<tr></tr>");
+									}
+								}
+								
+								int nbsp = (7 -(dayOfWeek-1 +lastDay)%7)%7;
+								for(int i = 1; i <= nbsp; i++) {
+									out.print("<td>&nbsp;</td>");
+								}
+							%>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="sdate" value="">
 		</td>
 	</tr>
 	
 	<tr>
 		<th>오는 날짜</th>
 		<td>
-			<input type="date" name="edate" value="${pageScope.caldate}" ${pageScope.schflag eq null?'':'max='+pageScope.caldate}>
+			<table class="mincal" border="1">
+				<tr>
+					<td>
+						<select name="sel">
+							<c:forEach begin="${year-5}" end="${year+5}" var="i">
+								<option 
+									<c:if test="${year eq i}">selected="selected"</c:if>
+								value="${i}">${i}년</option>
+							</c:forEach>
+						</select>
+						<select name="sel">
+							<c:forEach begin="1" end="12" var="i">
+								<option 
+									<c:if test="${month eq i}">selected="selected"</c:if>
+								value="${i}">${i}월</option>
+							</c:forEach>
+						</select>
+						<input type="hidden" name="year" value="<%=year%>">
+						<input type="hidden" name="month" value="<%=month%>">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mincalMonth"><%=year %>. <%=month %></th>
+				</tr>
+				<tr>
+					<th>일</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+					<th>토</th>
+				</tr>
+				<tr>
+					<td colspan='7'>
+						<table class="datesT">
+							<tr>
+							<%
+								for(int i = 0; i < dayOfWeek-1; i++){
+									out.print("<td>&nbsp;</td>");
+								}
+								
+								for(int i = 1; i <= lastDay; i++){
+									Map<String, String> map = Util.getCalView(list, year, month, i);
+									String titleList = map.get("titleList");
+									%>
+									<td class="days <%=map.get("titleList").equals("")? "poss" : "imposs" %> <%=String.valueOf(i).equals(day)?"selday":""%>"><%=i %></td>
+									<%
+									if((i+(dayOfWeek-1))%7 == 0){
+										out.print("<tr></tr>");
+									}
+								}
+								
+								nbsp = (7 -(dayOfWeek-1 +lastDay)%7)%7;
+								for(int i = 1; i <= nbsp; i++) {
+									out.print("<td>&nbsp;</td>");
+								}
+							%>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="edate" value="">
 		</td>
 	</tr>
 	
@@ -234,15 +388,20 @@
 	</tr>
 	<tr>
 		<td colspan="2">
-			<select name="searchresult" size="1">
+			
 			<%
 			if(schflag!=null){
 				%>
-				<option value="<%=mntn_code%>" selected="selected"><%=mntn_loc+" "+mntn_name%></option>
+				<input type="hidden" name="searchresult" value="<%=mntn_loc+" "+mntn_name%>">
+				<%=mntn_loc+" "+mntn_name%>
+				<%
+			}else {
+				%>
+				<select name="searchresult" size="2"></select>
 				<%
 			}
 			%>
-			</select>
+			
 		</td>
 	</tr>
 	<tr>
