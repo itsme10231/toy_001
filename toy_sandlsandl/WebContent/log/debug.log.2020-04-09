@@ -1,0 +1,326 @@
+DEBUG [2020-04-09 16:33:59,582] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 16:35:18,993] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 16:36:56,953] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 16:38:21,796] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:21,797] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:21,797] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:21,797] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:21,971] - Opening JDBC Connection
+DEBUG [2020-04-09 16:38:22,677] - Created connection 220376352.
+DEBUG [2020-04-09 16:38:22,681] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_NAME DESC 
+DEBUG [2020-04-09 16:38:22,770] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@d22ad20]
+DEBUG [2020-04-09 16:38:22,770] - Returned connection 220376352 to pool.
+DEBUG [2020-04-09 16:38:37,616] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 16:38:37,731] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:37,731] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:37,731] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:37,731] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:38:37,915] - Opening JDBC Connection
+DEBUG [2020-04-09 16:38:37,946] - Created connection 530488358.
+DEBUG [2020-04-09 16:38:37,952] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_NAME DESC 
+DEBUG [2020-04-09 16:38:37,959] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1f9e9c26]
+DEBUG [2020-04-09 16:38:37,959] - Returned connection 530488358 to pool.
+DEBUG [2020-04-09 16:41:09,178] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 16:41:09,367] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:41:09,367] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:41:09,367] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:41:09,368] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:41:09,593] - Opening JDBC Connection
+DEBUG [2020-04-09 16:41:09,630] - Created connection 1524923588.
+DEBUG [2020-04-09 16:41:09,635] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_NAME DESC 
+DEBUG [2020-04-09 16:41:09,638] - ==> Parameters: 
+DEBUG [2020-04-09 16:41:09,812] - <==      Total: 2931
+DEBUG [2020-04-09 16:41:09,813] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5ae47cc4]
+DEBUG [2020-04-09 16:41:09,813] - Returned connection 1524923588 to pool.
+DEBUG [2020-04-09 16:41:49,415] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 16:41:49,427] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:32,662] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:06:32,764] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:32,764] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:32,764] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:32,764] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:33,006] - Opening JDBC Connection
+DEBUG [2020-04-09 17:06:33,033] - Created connection 1940771341.
+DEBUG [2020-04-09 17:06:33,039] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:06:33,042] - ==> Parameters: 
+DEBUG [2020-04-09 17:06:33,160] - <==      Total: 2931
+DEBUG [2020-04-09 17:06:33,160] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@73add20d]
+DEBUG [2020-04-09 17:06:33,161] - Returned connection 1940771341 to pool.
+DEBUG [2020-04-09 17:06:47,442] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:47,443] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:47,443] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:47,443] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:06:47,448] - Opening JDBC Connection
+DEBUG [2020-04-09 17:06:47,477] - Created connection 587491389.
+DEBUG [2020-04-09 17:06:47,477] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:06:47,477] - ==> Parameters: 
+DEBUG [2020-04-09 17:06:47,539] - <==      Total: 2931
+DEBUG [2020-04-09 17:06:47,540] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2304683d]
+DEBUG [2020-04-09 17:06:47,540] - Returned connection 587491389 to pool.
+DEBUG [2020-04-09 17:07:08,082] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:08,082] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:08,082] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:08,082] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:08,091] - Opening JDBC Connection
+DEBUG [2020-04-09 17:07:08,118] - Created connection 2109002784.
+DEBUG [2020-04-09 17:07:08,118] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:07:08,118] - ==> Parameters: 
+DEBUG [2020-04-09 17:07:08,166] - <==      Total: 2931
+DEBUG [2020-04-09 17:07:08,166] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7db4d420]
+DEBUG [2020-04-09 17:07:08,166] - Returned connection 2109002784 to pool.
+DEBUG [2020-04-09 17:07:49,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:49,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:49,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:49,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:07:49,333] - Opening JDBC Connection
+DEBUG [2020-04-09 17:07:49,362] - Created connection 1685199852.
+DEBUG [2020-04-09 17:07:49,362] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:07:49,362] - ==> Parameters: 
+DEBUG [2020-04-09 17:07:49,411] - <==      Total: 2931
+DEBUG [2020-04-09 17:07:49,412] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@64721bec]
+DEBUG [2020-04-09 17:07:49,412] - Returned connection 1685199852 to pool.
+DEBUG [2020-04-09 17:09:13,666] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:13,676] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:13,677] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:13,677] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:28,947] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:09:29,050] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:29,050] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:29,050] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:29,050] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:09:29,208] - Opening JDBC Connection
+DEBUG [2020-04-09 17:09:29,234] - Created connection 491688258.
+DEBUG [2020-04-09 17:09:29,239] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:09:29,241] - ==> Parameters: 
+DEBUG [2020-04-09 17:09:29,331] - <==      Total: 2931
+DEBUG [2020-04-09 17:09:29,331] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1d4e9142]
+DEBUG [2020-04-09 17:09:29,331] - Returned connection 491688258 to pool.
+DEBUG [2020-04-09 17:10:44,750] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:10:44,864] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:10:44,865] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:10:44,865] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:10:44,865] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:10:45,049] - Opening JDBC Connection
+DEBUG [2020-04-09 17:10:45,077] - Created connection 778299830.
+DEBUG [2020-04-09 17:10:45,080] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:10:45,088] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2e63e9b6]
+DEBUG [2020-04-09 17:10:45,088] - Returned connection 778299830 to pool.
+DEBUG [2020-04-09 17:11:44,106] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:11:44,108] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:15:43,359] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:15:43,359] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:15:43,359] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:15:43,359] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:15:43,365] - Opening JDBC Connection
+DEBUG [2020-04-09 17:15:43,394] - Created connection 1919797316.
+DEBUG [2020-04-09 17:15:43,394] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:15:43,395] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@726dc844]
+DEBUG [2020-04-09 17:15:43,395] - Returned connection 1919797316 to pool.
+DEBUG [2020-04-09 17:18:12,465] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:05,302] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:19:05,423] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:05,423] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:05,424] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:05,424] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:14,661] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:14,662] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:14,662] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:19:14,662] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:19,129] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:19,129] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:19,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:19,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:21,372] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:21,372] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:21,373] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:59,712] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:20:59,817] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:59,817] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:59,817] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:20:59,817] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:21:34,042] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:21:34,044] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:21:34,044] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:21:34,044] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:21:34,229] - Opening JDBC Connection
+DEBUG [2020-04-09 17:21:34,265] - Created connection 1353528530.
+DEBUG [2020-04-09 17:21:34,272] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:21:34,279] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@50ad34d2]
+DEBUG [2020-04-09 17:21:34,279] - Returned connection 1353528530 to pool.
+DEBUG [2020-04-09 17:22:55,183] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:22:55,184] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:19,557] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:23:19,656] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:19,656] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:19,656] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:19,657] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:19,907] - Opening JDBC Connection
+DEBUG [2020-04-09 17:23:19,936] - Created connection 358701247.
+DEBUG [2020-04-09 17:23:19,940] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:23:19,945] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@156158bf]
+DEBUG [2020-04-09 17:23:19,946] - Returned connection 358701247 to pool.
+DEBUG [2020-04-09 17:23:22,172] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:22,173] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:22,173] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:22,173] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:22,180] - Opening JDBC Connection
+DEBUG [2020-04-09 17:23:22,221] - Created connection 1060720820.
+DEBUG [2020-04-09 17:23:22,221] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:23:22,225] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3f3950b4]
+DEBUG [2020-04-09 17:23:22,225] - Returned connection 1060720820 to pool.
+DEBUG [2020-04-09 17:23:35,901] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:35,903] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:35,903] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:35,903] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:23:35,909] - Opening JDBC Connection
+DEBUG [2020-04-09 17:23:35,935] - Created connection 1787041134.
+DEBUG [2020-04-09 17:23:35,935] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:23:35,939] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6a84156e]
+DEBUG [2020-04-09 17:23:35,939] - Returned connection 1787041134 to pool.
+DEBUG [2020-04-09 17:25:10,330] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:25:10,331] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:25:10,332] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:11,907] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:28:12,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:12,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:12,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:12,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:12,194] - Opening JDBC Connection
+DEBUG [2020-04-09 17:28:12,221] - Created connection 1276440694.
+DEBUG [2020-04-09 17:28:12,224] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:28:12,230] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4c14f076]
+DEBUG [2020-04-09 17:28:12,231] - Returned connection 1276440694 to pool.
+DEBUG [2020-04-09 17:28:55,432] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:28:55,541] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,541] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,541] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,542] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,893] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,895] - Opening JDBC Connection
+DEBUG [2020-04-09 17:28:55,897] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:28:55,925] - Created connection 1255652950.
+DEBUG [2020-04-09 17:28:55,928] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' MNTN_LOC LIKE '?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:28:55,935] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4ad7be56]
+DEBUG [2020-04-09 17:28:55,935] - Returned connection 1255652950 to pool.
+DEBUG [2020-04-09 17:34:40,174] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:34:40,312] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:34:40,312] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:34:40,312] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:34:40,312] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:34:40,544] - Opening JDBC Connection
+DEBUG [2020-04-09 17:34:40,591] - Created connection 1254934491.
+DEBUG [2020-04-09 17:34:40,594] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:34:40,600] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4accc7db]
+DEBUG [2020-04-09 17:34:40,600] - Returned connection 1254934491 to pool.
+DEBUG [2020-04-09 17:35:23,950] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:36:07,814] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:36:07,914] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:36:07,914] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:36:07,914] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:36:07,915] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:36:08,047] - Opening JDBC Connection
+DEBUG [2020-04-09 17:36:08,073] - Created connection 1723016162.
+DEBUG [2020-04-09 17:36:08,076] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME = '?' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:36:08,082] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@66b323e2]
+DEBUG [2020-04-09 17:36:08,082] - Returned connection 1723016162 to pool.
+DEBUG [2020-04-09 17:37:10,973] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:37:32,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:37:32,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:37:32,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:37:32,130] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:37:32,142] - Opening JDBC Connection
+DEBUG [2020-04-09 17:37:32,173] - Created connection 616670878.
+DEBUG [2020-04-09 17:37:32,173] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME = '?' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:37:32,176] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@24c1a69e]
+DEBUG [2020-04-09 17:37:32,176] - Returned connection 616670878 to pool.
+DEBUG [2020-04-09 17:38:36,330] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:38:36,445] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:36,445] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:36,445] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:36,445] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:36,601] - Opening JDBC Connection
+DEBUG [2020-04-09 17:38:36,637] - Created connection 953587969.
+DEBUG [2020-04-09 17:38:36,641] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME = '?' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:38:36,647] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@38d69901]
+DEBUG [2020-04-09 17:38:36,648] - Returned connection 953587969 to pool.
+DEBUG [2020-04-09 17:38:47,174] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,176] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:38:47,206] - Opening JDBC Connection
+DEBUG [2020-04-09 17:38:47,233] - Created connection 1429719128.
+DEBUG [2020-04-09 17:38:47,233] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME = '?' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:38:47,241] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5537c858]
+DEBUG [2020-04-09 17:38:47,241] - Returned connection 1429719128 to pool.
+DEBUG [2020-04-09 17:40:13,665] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:49,250] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:41:49,361] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:49,361] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:49,361] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:49,362] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:49,589] - Opening JDBC Connection
+DEBUG [2020-04-09 17:41:49,620] - Created connection 125953398.
+DEBUG [2020-04-09 17:41:49,625] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:41:49,631] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@781e576]
+DEBUG [2020-04-09 17:41:49,632] - Returned connection 125953398 to pool.
+DEBUG [2020-04-09 17:41:54,197] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:54,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:54,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:54,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:41:54,205] - Opening JDBC Connection
+DEBUG [2020-04-09 17:41:54,237] - Created connection 1936356497.
+DEBUG [2020-04-09 17:41:54,237] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:41:54,241] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@736a7491]
+DEBUG [2020-04-09 17:41:54,241] - Returned connection 1936356497 to pool.
+DEBUG [2020-04-09 17:42:11,177] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:11,177] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:33,476] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:33,476] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:33,476] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:33,476] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:42:33,480] - Opening JDBC Connection
+DEBUG [2020-04-09 17:42:33,507] - Created connection 391147561.
+DEBUG [2020-04-09 17:42:33,507] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%?%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:42:33,508] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@17507029]
+DEBUG [2020-04-09 17:42:33,508] - Returned connection 391147561 to pool.
+DEBUG [2020-04-09 17:43:26,853] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:46:16,188] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:46:16,286] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:46:16,286] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:46:16,286] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:46:16,286] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:46:16,470] - Opening JDBC Connection
+DEBUG [2020-04-09 17:46:16,500] - Created connection 745394392.
+DEBUG [2020-04-09 17:46:16,503] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE %?% ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:46:16,506] - ==> Parameters: 계(String)
+DEBUG [2020-04-09 17:46:16,512] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2c6dd0d8]
+DEBUG [2020-04-09 17:46:16,512] - Returned connection 745394392 to pool.
+DEBUG [2020-04-09 17:47:00,870] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:47:08,662] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:47:08,762] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:47:08,762] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:47:08,762] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:47:08,762] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:47:08,864] - Opening JDBC Connection
+DEBUG [2020-04-09 17:47:08,891] - Created connection 1073684304.
+DEBUG [2020-04-09 17:47:08,894] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME = ? ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:47:08,896] - ==> Parameters: 계양산(String)
+DEBUG [2020-04-09 17:47:08,915] - <==      Total: 1
+DEBUG [2020-04-09 17:47:08,915] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3fff1f50]
+DEBUG [2020-04-09 17:47:08,916] - Returned connection 1073684304 to pool.
+DEBUG [2020-04-09 17:47:44,996] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:48:30,066] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-09 17:48:30,166] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:48:30,166] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:48:30,166] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:48:30,166] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-09 17:48:30,366] - Opening JDBC Connection
+DEBUG [2020-04-09 17:48:30,392] - Created connection 1294844549.
+DEBUG [2020-04-09 17:48:30,395] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-09 17:48:30,398] - ==> Parameters: 계(String)
+DEBUG [2020-04-09 17:48:30,415] - <==      Total: 41
+DEBUG [2020-04-09 17:48:30,415] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4d2dc285]
+DEBUG [2020-04-09 17:48:30,415] - Returned connection 1294844549 to pool.
+DEBUG [2020-04-09 17:49:10,724] - PooledDataSource forcefully closed/removed all connections.

@@ -1,0 +1,75 @@
+테이블 정의
+
+USERINFO
+
+아이디(pk)	ID		VARCHAR2(10)
+비밀번호		PASSWORD	VARCHAR2(14)
+이름		NAME		VARCHAR2(20)
+이메일		EMAIL		VARCHAR2(30)
+주소		ADDRESS		VARCHAR2(100)
+등급		ROLE		VARCHAR2(10)
+비활성여부	DELFLAG		VARCHAR2(2)
+
+
+USERLIKE
+
+순번(pk)시퀀스처리
+아이디(fk)
+선호거리
+선호높이
+선호난이도
+선호위치
+
+
+SCHEDULE_D
+
+순번(pk)시퀀스처리	SEQ
+아이디(유저)(fk)	ID		VARCHAR2(10)
+날짜		MDATE		VARCHAR2(8)
+산코드(fk)		MNTN_CODE	VARCHAR2()
+코멘트		MCOMMENT	VARCHAR2(4000)
+공개여부		PUBFLAG		VARCHAR2(2)
+//등반여부	CLIMBFLAG
+
+
+WISHLIST
+
+순번(pk)시퀀스처리	SEQ
+산코드(fk)		MNTN_CODE
+아이디(유저)(fk)	ID
+
+
+MNTN_COMMENT(다녀온 산 표시기능을 겸함)
+
+순번(pk)시퀀스처리
+산코드(fk)
+아이디(유저)(fk)
+등반일
+동행인
+코멘트
+평가
+사진
+등록일
+삭제여부
+
+
+MNTN_PHOTO
+
+순번(pk)시퀀스처리
+저장명
+다운로드명
+아이디(유저)(FK)
+산코드(fk)
+사이즈
+등록일
+삭제여부
+
+
+MNTN_VAL(xlsx파일 임포트)
+
+순번		SEQ		NUMBER
+산이름		MNTN_NAME	VARCHAR2(40)
+위치		MNTN_LOC	VARCHAR2(80)
+산코드(PK)	MNTN_CODE	NUMBER
+
+상세정보는 REST API로 받아오기

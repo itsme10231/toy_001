@@ -1,0 +1,1571 @@
+DEBUG [2020-04-10 09:21:55,187] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 09:21:55,420] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:21:55,420] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:21:55,421] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:21:55,421] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:21:55,623] - Opening JDBC Connection
+DEBUG [2020-04-10 09:21:56,209] - Created connection 2112472701.
+DEBUG [2020-04-10 09:21:56,214] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:21:56,294] - ==> Parameters: 계(String)
+DEBUG [2020-04-10 09:21:56,355] - <==      Total: 41
+DEBUG [2020-04-10 09:21:56,355] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7de9c67d]
+DEBUG [2020-04-10 09:21:56,355] - Returned connection 2112472701 to pool.
+DEBUG [2020-04-10 09:22:22,011] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:22:22,012] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:22:22,012] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:22:22,012] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:22:22,022] - Opening JDBC Connection
+DEBUG [2020-04-10 09:22:22,057] - Created connection 1279777273.
+DEBUG [2020-04-10 09:22:22,058] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' AND MNTN_LOC LIKE ?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:22:22,058] - ==> Parameters: 계(String), 28(String)
+DEBUG [2020-04-10 09:22:22,082] - <==      Total: 0
+DEBUG [2020-04-10 09:22:22,082] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4c47d9f9]
+DEBUG [2020-04-10 09:22:22,083] - Returned connection 1279777273 to pool.
+DEBUG [2020-04-10 09:23:09,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:23:09,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:23:09,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:23:09,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:23:09,672] - Opening JDBC Connection
+DEBUG [2020-04-10 09:23:09,705] - Created connection 2012348274.
+DEBUG [2020-04-10 09:23:09,705] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' AND MNTN_LOC LIKE ?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:23:09,706] - ==> Parameters: (String), 26(String)
+DEBUG [2020-04-10 09:23:09,707] - <==      Total: 0
+DEBUG [2020-04-10 09:23:09,708] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@77f1ff72]
+DEBUG [2020-04-10 09:23:09,708] - Returned connection 2012348274 to pool.
+DEBUG [2020-04-10 09:24:58,972] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:24:58,981] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:25:16,615] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 09:25:16,715] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:25:16,715] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:25:16,715] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:25:16,715] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:25:16,905] - Opening JDBC Connection
+DEBUG [2020-04-10 09:25:16,939] - Created connection 1242850780.
+DEBUG [2020-04-10 09:25:16,943] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' AND MNTN_LOC LIKE ?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:25:16,945] - ==> Parameters: (String), 11(String)
+DEBUG [2020-04-10 09:25:16,953] - <==      Total: 0
+DEBUG [2020-04-10 09:25:16,954] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4a1465dc]
+DEBUG [2020-04-10 09:25:16,954] - Returned connection 1242850780 to pool.
+DEBUG [2020-04-10 09:27:01,553] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 09:27:01,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:27:01,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:27:01,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:27:01,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:27:01,835] - Opening JDBC Connection
+DEBUG [2020-04-10 09:27:01,865] - Created connection 965652313.
+DEBUG [2020-04-10 09:27:01,869] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_LOC LIKE ?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:27:01,872] - ==> Parameters: 27(String)
+DEBUG [2020-04-10 09:27:01,880] - <==      Total: 0
+DEBUG [2020-04-10 09:27:01,881] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@398eaf59]
+DEBUG [2020-04-10 09:27:01,881] - Returned connection 965652313 to pool.
+DEBUG [2020-04-10 09:28:37,618] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:28:37,634] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:37,990] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 09:29:38,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:38,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:38,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:38,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:38,283] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:29:38,337] - Opening JDBC Connection
+DEBUG [2020-04-10 09:29:38,366] - Created connection 1613016186.
+DEBUG [2020-04-10 09:29:38,369] - ==>  Preparing: SELECT SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' AND MNTN_CODE LIKE ?||'%' ORDER BY MNTN_LOC ASC, MNTN_NAME DESC 
+DEBUG [2020-04-10 09:29:38,371] - ==> Parameters: 계(String), 27(String)
+DEBUG [2020-04-10 09:29:38,384] - <==      Total: 1
+DEBUG [2020-04-10 09:29:38,385] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6024ac7a]
+DEBUG [2020-04-10 09:29:38,385] - Returned connection 1613016186 to pool.
+DEBUG [2020-04-10 09:49:57,967] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 09:49:58,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:49:58,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:49:58,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:49:58,098] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:49:58,253] - Opening JDBC Connection
+DEBUG [2020-04-10 09:49:58,281] - Created connection 1090014473.
+DEBUG [2020-04-10 09:49:58,284] - ==>  Preparing: SELECT RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 09:49:58,286] - ==> Parameters: 11(String), 20(String), 1(String)
+DEBUG [2020-04-10 09:49:58,303] - <==      Total: 20
+DEBUG [2020-04-10 09:49:58,304] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@40f84d09]
+DEBUG [2020-04-10 09:49:58,304] - Returned connection 1090014473 to pool.
+DEBUG [2020-04-10 09:50:57,533] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:53:43,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:53:43,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:53:43,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:53:43,458] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 09:53:43,466] - Opening JDBC Connection
+DEBUG [2020-04-10 09:53:43,499] - Created connection 382296856.
+DEBUG [2020-04-10 09:53:43,499] - ==>  Preparing: SELECT RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 09:53:43,500] - ==> Parameters: 11(String), 20(String), 1(String)
+DEBUG [2020-04-10 09:53:43,504] - <==      Total: 20
+DEBUG [2020-04-10 09:53:43,505] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@16c96318]
+DEBUG [2020-04-10 09:53:43,505] - Returned connection 382296856 to pool.
+DEBUG [2020-04-10 09:54:33,756] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:37,258] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 11:37:37,397] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:37,397] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:37,397] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:37,397] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:37,531] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:37,562] - Created connection 318526685.
+DEBUG [2020-04-10 11:37:37,562] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:37,562] - ==> Parameters: g(String)
+DEBUG [2020-04-10 11:37:37,593] - <==      Total: 0
+DEBUG [2020-04-10 11:37:37,593] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@12fc54dd]
+DEBUG [2020-04-10 11:37:37,593] - Returned connection 318526685 to pool.
+DEBUG [2020-04-10 11:37:38,299] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:44,076] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:44,076] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:44,076] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:44,076] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:44,092] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:44,128] - Created connection 811099644.
+DEBUG [2020-04-10 11:37:44,128] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:44,128] - ==> Parameters: gg(String)
+DEBUG [2020-04-10 11:37:44,128] - <==      Total: 0
+DEBUG [2020-04-10 11:37:44,128] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@305865fc]
+DEBUG [2020-04-10 11:37:44,128] - Returned connection 811099644 to pool.
+DEBUG [2020-04-10 11:37:45,448] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,448] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,448] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,448] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,463] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:45,501] - Created connection 375924713.
+DEBUG [2020-04-10 11:37:45,501] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:45,501] - ==> Parameters: g(String)
+DEBUG [2020-04-10 11:37:45,502] - <==      Total: 0
+DEBUG [2020-04-10 11:37:45,502] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@166827e9]
+DEBUG [2020-04-10 11:37:45,502] - Returned connection 375924713 to pool.
+DEBUG [2020-04-10 11:37:45,587] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,588] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,596] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,596] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,596] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,596] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:45,605] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:45,632] - Created connection 2031688644.
+DEBUG [2020-04-10 11:37:45,632] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:45,632] - ==> Parameters: (String)
+DEBUG [2020-04-10 11:37:45,633] - <==      Total: 0
+DEBUG [2020-04-10 11:37:45,633] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@79191bc4]
+DEBUG [2020-04-10 11:37:45,633] - Returned connection 2031688644 to pool.
+DEBUG [2020-04-10 11:37:46,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,421] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:46,456] - Created connection 384078148.
+DEBUG [2020-04-10 11:37:46,457] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:46,457] - ==> Parameters: a(String)
+DEBUG [2020-04-10 11:37:46,457] - <==      Total: 0
+DEBUG [2020-04-10 11:37:46,457] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@16e49144]
+DEBUG [2020-04-10 11:37:46,457] - Returned connection 384078148 to pool.
+DEBUG [2020-04-10 11:37:46,643] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,643] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,643] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,643] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:46,658] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:46,689] - Created connection 381011134.
+DEBUG [2020-04-10 11:37:46,689] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:46,689] - ==> Parameters: ad(String)
+DEBUG [2020-04-10 11:37:46,689] - <==      Total: 0
+DEBUG [2020-04-10 11:37:46,690] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@16b5c4be]
+DEBUG [2020-04-10 11:37:46,690] - Returned connection 381011134 to pool.
+DEBUG [2020-04-10 11:37:47,055] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,058] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,061] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,066] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,066] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,066] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,066] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,071] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:47,082] - Created connection 1122592977.
+DEBUG [2020-04-10 11:37:47,082] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:47,082] - ==> Parameters: adm(String)
+DEBUG [2020-04-10 11:37:47,082] - <==      Total: 0
+DEBUG [2020-04-10 11:37:47,082] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@42e968d1]
+DEBUG [2020-04-10 11:37:47,082] - Returned connection 1122592977 to pool.
+DEBUG [2020-04-10 11:37:47,134] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,134] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,134] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,134] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,139] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:47,150] - Created connection 275465384.
+DEBUG [2020-04-10 11:37:47,150] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:47,150] - ==> Parameters: admi(String)
+DEBUG [2020-04-10 11:37:47,166] - <==      Total: 0
+DEBUG [2020-04-10 11:37:47,166] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@106b44a8]
+DEBUG [2020-04-10 11:37:47,166] - Returned connection 275465384 to pool.
+DEBUG [2020-04-10 11:37:47,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:47,336] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:47,351] - Created connection 968348124.
+DEBUG [2020-04-10 11:37:47,351] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:47,351] - ==> Parameters: admin(String)
+DEBUG [2020-04-10 11:37:47,351] - <==      Total: 1
+DEBUG [2020-04-10 11:37:47,351] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@39b7d1dc]
+DEBUG [2020-04-10 11:37:47,351] - Returned connection 968348124 to pool.
+DEBUG [2020-04-10 11:37:48,838] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:48,839] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:48,840] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,405] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,405] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,405] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,415] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:50,478] - Created connection 722949774.
+DEBUG [2020-04-10 11:37:50,478] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:50,478] - ==> Parameters: admi(String)
+DEBUG [2020-04-10 11:37:50,478] - <==      Total: 0
+DEBUG [2020-04-10 11:37:50,478] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2b17568e]
+DEBUG [2020-04-10 11:37:50,478] - Returned connection 722949774 to pool.
+DEBUG [2020-04-10 11:37:50,868] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,868] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,868] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,868] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,868] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:50,884] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:50,930] - Created connection 1050643847.
+DEBUG [2020-04-10 11:37:50,930] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:50,930] - ==> Parameters: adm(String)
+DEBUG [2020-04-10 11:37:50,931] - <==      Total: 0
+DEBUG [2020-04-10 11:37:50,931] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3e9f8d87]
+DEBUG [2020-04-10 11:37:50,931] - Returned connection 1050643847 to pool.
+DEBUG [2020-04-10 11:37:51,203] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,203] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,203] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,203] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,218] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:51,250] - Created connection 1922002519.
+DEBUG [2020-04-10 11:37:51,250] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:51,250] - ==> Parameters: ad(String)
+DEBUG [2020-04-10 11:37:51,250] - <==      Total: 0
+DEBUG [2020-04-10 11:37:51,250] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@728f6e57]
+DEBUG [2020-04-10 11:37:51,250] - Returned connection 1922002519 to pool.
+DEBUG [2020-04-10 11:37:51,595] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,595] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,595] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,595] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,611] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:51,642] - Created connection 414178132.
+DEBUG [2020-04-10 11:37:51,642] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:51,642] - ==> Parameters: a(String)
+DEBUG [2020-04-10 11:37:51,642] - <==      Total: 0
+DEBUG [2020-04-10 11:37:51,642] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@18afdb54]
+DEBUG [2020-04-10 11:37:51,642] - Returned connection 414178132 to pool.
+DEBUG [2020-04-10 11:37:51,997] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,998] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,998] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:51,999] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:52,008] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:52,010] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:52,012] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 11:37:52,021] - Opening JDBC Connection
+DEBUG [2020-04-10 11:37:52,049] - Created connection 2099675199.
+DEBUG [2020-04-10 11:37:52,049] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 11:37:52,049] - ==> Parameters: (String)
+DEBUG [2020-04-10 11:37:52,049] - <==      Total: 0
+DEBUG [2020-04-10 11:37:52,049] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7d26803f]
+DEBUG [2020-04-10 11:37:52,049] - Returned connection 2099675199 to pool.
+DEBUG [2020-04-10 11:38:10,305] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:53,858] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,092] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:54,287] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:54,287] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:54,844] - Created connection 503450415.
+DEBUG [2020-04-10 12:59:54,844] - Created connection 708137075.
+DEBUG [2020-04-10 12:59:54,847] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:54,847] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:54,927] - ==> Parameters: ㅇㅇ(String)
+DEBUG [2020-04-10 12:59:54,928] - ==> Parameters: ㅇ(String)
+DEBUG [2020-04-10 12:59:54,962] - <==      Total: 0
+DEBUG [2020-04-10 12:59:54,962] - <==      Total: 0
+DEBUG [2020-04-10 12:59:54,963] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1e020b2f]
+DEBUG [2020-04-10 12:59:54,963] - Returned connection 503450415 to pool.
+DEBUG [2020-04-10 12:59:54,964] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a355073]
+DEBUG [2020-04-10 12:59:54,964] - Returned connection 708137075 to pool.
+DEBUG [2020-04-10 12:59:57,081] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:57,081] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:57,081] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:57,081] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:57,096] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:57,128] - Created connection 798900256.
+DEBUG [2020-04-10 12:59:57,128] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:57,128] - ==> Parameters: ㅇㅇㅇ(String)
+DEBUG [2020-04-10 12:59:57,128] - <==      Total: 0
+DEBUG [2020-04-10 12:59:57,128] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2f9e4020]
+DEBUG [2020-04-10 12:59:57,128] - Returned connection 798900256 to pool.
+DEBUG [2020-04-10 12:59:58,343] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,343] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,343] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,343] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,374] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:58,409] - Created connection 2069483482.
+DEBUG [2020-04-10 12:59:58,409] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:58,409] - ==> Parameters: ㅇㅇ(String)
+DEBUG [2020-04-10 12:59:58,409] - <==      Total: 0
+DEBUG [2020-04-10 12:59:58,409] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7b59cfda]
+DEBUG [2020-04-10 12:59:58,409] - Returned connection 2069483482 to pool.
+DEBUG [2020-04-10 12:59:58,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,500] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:58,540] - Created connection 379708571.
+DEBUG [2020-04-10 12:59:58,540] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:58,540] - ==> Parameters: ㅇ(String)
+DEBUG [2020-04-10 12:59:58,541] - <==      Total: 0
+DEBUG [2020-04-10 12:59:58,541] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@16a1e49b]
+DEBUG [2020-04-10 12:59:58,541] - Returned connection 379708571 to pool.
+DEBUG [2020-04-10 12:59:58,651] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,651] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,651] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,651] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 12:59:58,659] - Opening JDBC Connection
+DEBUG [2020-04-10 12:59:58,690] - Created connection 458749156.
+DEBUG [2020-04-10 12:59:58,691] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 12:59:58,691] - ==> Parameters: (String)
+DEBUG [2020-04-10 12:59:58,692] - <==      Total: 0
+DEBUG [2020-04-10 12:59:58,693] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1b57f4e4]
+DEBUG [2020-04-10 12:59:58,693] - Returned connection 458749156 to pool.
+DEBUG [2020-04-10 13:00:01,283] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,283] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,283] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,283] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,314] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,314] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,314] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,314] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,330] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,330] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:01,330] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:01,361] - Created connection 1305892570.
+DEBUG [2020-04-10 13:00:01,361] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:01,361] - ==> Parameters: ㅇ(String)
+DEBUG [2020-04-10 13:00:01,361] - <==      Total: 0
+DEBUG [2020-04-10 13:00:01,361] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4dd656da]
+DEBUG [2020-04-10 13:00:01,361] - Returned connection 1305892570 to pool.
+DEBUG [2020-04-10 13:00:02,020] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,020] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,020] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,020] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,035] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:02,067] - Created connection 1390151792.
+DEBUG [2020-04-10 13:00:02,067] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:02,067] - ==> Parameters: (String)
+DEBUG [2020-04-10 13:00:02,067] - <==      Total: 0
+DEBUG [2020-04-10 13:00:02,067] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@52dc0870]
+DEBUG [2020-04-10 13:00:02,067] - Returned connection 1390151792 to pool.
+DEBUG [2020-04-10 13:00:02,461] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,462] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,462] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,462] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:02,479] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:02,512] - Created connection 1723696512.
+DEBUG [2020-04-10 13:00:02,512] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:02,512] - ==> Parameters: (String)
+DEBUG [2020-04-10 13:00:02,513] - <==      Total: 0
+DEBUG [2020-04-10 13:00:02,513] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@66bd8580]
+DEBUG [2020-04-10 13:00:02,513] - Returned connection 1723696512 to pool.
+DEBUG [2020-04-10 13:00:03,057] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:03,057] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:03,057] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:03,057] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:03,057] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:03,089] - Created connection 730862775.
+DEBUG [2020-04-10 13:00:03,089] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:03,089] - ==> Parameters: i(String)
+DEBUG [2020-04-10 13:00:03,089] - <==      Total: 0
+DEBUG [2020-04-10 13:00:03,089] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2b9014b7]
+DEBUG [2020-04-10 13:00:03,089] - Returned connection 730862775 to pool.
+DEBUG [2020-04-10 13:00:04,559] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,559] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,559] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,559] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,561] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:04,593] - Created connection 1501227525.
+DEBUG [2020-04-10 13:00:04,593] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:04,593] - ==> Parameters: it(String)
+DEBUG [2020-04-10 13:00:04,593] - <==      Total: 0
+DEBUG [2020-04-10 13:00:04,593] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@597aea05]
+DEBUG [2020-04-10 13:00:04,593] - Returned connection 1501227525 to pool.
+DEBUG [2020-04-10 13:00:04,838] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,838] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,838] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,838] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:04,853] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:04,884] - Created connection 151777729.
+DEBUG [2020-04-10 13:00:04,884] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:04,884] - ==> Parameters: its(String)
+DEBUG [2020-04-10 13:00:04,884] - <==      Total: 0
+DEBUG [2020-04-10 13:00:04,884] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@90bf1c1]
+DEBUG [2020-04-10 13:00:04,884] - Returned connection 151777729 to pool.
+DEBUG [2020-04-10 13:00:05,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,009] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,009] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,039] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,039] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,039] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,039] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,045] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,060] - Created connection 1786573348.
+DEBUG [2020-04-10 13:00:05,060] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,060] - ==> Parameters: itsme(String)
+DEBUG [2020-04-10 13:00:05,060] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,060] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6a7cf224]
+DEBUG [2020-04-10 13:00:05,060] - Returned connection 1786573348 to pool.
+DEBUG [2020-04-10 13:00:05,092] - Created connection 224008166.
+DEBUG [2020-04-10 13:00:05,092] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,092] - ==> Parameters: itsme(String)
+DEBUG [2020-04-10 13:00:05,092] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,092] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@d5a17e6]
+DEBUG [2020-04-10 13:00:05,092] - Returned connection 224008166 to pool.
+DEBUG [2020-04-10 13:00:05,475] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,475] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,475] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,475] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,492] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,523] - Created connection 104135216.
+DEBUG [2020-04-10 13:00:05,524] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,524] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 13:00:05,525] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,525] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@634fa30]
+DEBUG [2020-04-10 13:00:05,525] - Returned connection 104135216 to pool.
+DEBUG [2020-04-10 13:00:05,566] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,567] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,567] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,567] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,572] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,596] - Created connection 143521125.
+DEBUG [2020-04-10 13:00:05,596] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,597] - ==> Parameters: itsme10(String)
+DEBUG [2020-04-10 13:00:05,598] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,599] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@88df565]
+DEBUG [2020-04-10 13:00:05,599] - Returned connection 143521125 to pool.
+DEBUG [2020-04-10 13:00:05,719] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,719] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,719] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,719] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,726] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,754] - Created connection 93438478.
+DEBUG [2020-04-10 13:00:05,754] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,754] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:00:05,772] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,772] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@591c20e]
+DEBUG [2020-04-10 13:00:05,772] - Returned connection 93438478 to pool.
+DEBUG [2020-04-10 13:00:05,789] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,790] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,790] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,790] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,796] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:05,820] - Created connection 919608059.
+DEBUG [2020-04-10 13:00:05,820] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:05,821] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:00:05,821] - <==      Total: 0
+DEBUG [2020-04-10 13:00:05,821] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@36d01afb]
+DEBUG [2020-04-10 13:00:05,821] - Returned connection 919608059 to pool.
+DEBUG [2020-04-10 13:00:05,967] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,967] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,967] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,967] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:05,975] - Opening JDBC Connection
+DEBUG [2020-04-10 13:00:06,012] - Created connection 1816522480.
+DEBUG [2020-04-10 13:00:06,012] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:00:06,012] - ==> Parameters: itsme10231(String)
+DEBUG [2020-04-10 13:00:06,013] - <==      Total: 0
+DEBUG [2020-04-10 13:00:06,013] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6c45eef0]
+DEBUG [2020-04-10 13:00:06,013] - Returned connection 1816522480 to pool.
+DEBUG [2020-04-10 13:00:14,488] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,493] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,493] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,494] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,495] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,496] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,497] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,498] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,498] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,499] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,501] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:00:14,503] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:47,920] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:47,920] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:47,920] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:47,920] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:47,935] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:47,967] - Created connection 692546844.
+DEBUG [2020-04-10 13:06:47,967] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:47,967] - ==> Parameters: ffffff(String)
+DEBUG [2020-04-10 13:06:47,967] - <==      Total: 0
+DEBUG [2020-04-10 13:06:47,967] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@29476d1c]
+DEBUG [2020-04-10 13:06:47,967] - Returned connection 692546844 to pool.
+DEBUG [2020-04-10 13:06:52,990] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:52,990] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:52,990] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:52,990] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:53,006] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:53,037] - Created connection 2117415857.
+DEBUG [2020-04-10 13:06:53,037] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:53,037] - ==> Parameters: ffffff(String)
+DEBUG [2020-04-10 13:06:53,037] - <==      Total: 0
+DEBUG [2020-04-10 13:06:53,037] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7e3533b1]
+DEBUG [2020-04-10 13:06:53,037] - Returned connection 2117415857 to pool.
+DEBUG [2020-04-10 13:06:53,884] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:53,884] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:53,884] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:53,884] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:53,890] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:53,921] - Created connection 974348382.
+DEBUG [2020-04-10 13:06:53,921] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:53,921] - ==> Parameters: fffffff(String)
+DEBUG [2020-04-10 13:06:53,921] - <==      Total: 0
+DEBUG [2020-04-10 13:06:53,921] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3a13605e]
+DEBUG [2020-04-10 13:06:53,921] - Returned connection 974348382 to pool.
+DEBUG [2020-04-10 13:06:54,045] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,045] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,045] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,045] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,049] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:54,065] - Created connection 519802594.
+DEBUG [2020-04-10 13:06:54,065] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:54,065] - ==> Parameters: ffffffff(String)
+DEBUG [2020-04-10 13:06:54,065] - <==      Total: 0
+DEBUG [2020-04-10 13:06:54,065] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1efb8ee2]
+DEBUG [2020-04-10 13:06:54,065] - Returned connection 519802594 to pool.
+DEBUG [2020-04-10 13:06:54,187] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,187] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,187] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,187] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,193] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:54,208] - Created connection 315708813.
+DEBUG [2020-04-10 13:06:54,208] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:54,208] - ==> Parameters: fffffffff(String)
+DEBUG [2020-04-10 13:06:54,208] - <==      Total: 0
+DEBUG [2020-04-10 13:06:54,208] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@12d1558d]
+DEBUG [2020-04-10 13:06:54,208] - Returned connection 315708813 to pool.
+DEBUG [2020-04-10 13:06:54,534] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,534] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,534] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,535] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,543] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:54,565] - Created connection 1277421229.
+DEBUG [2020-04-10 13:06:54,565] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:54,565] - ==> Parameters: ffffffffff(String)
+DEBUG [2020-04-10 13:06:54,580] - <==      Total: 0
+DEBUG [2020-04-10 13:06:54,580] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4c23e6ad]
+DEBUG [2020-04-10 13:06:54,580] - Returned connection 1277421229 to pool.
+DEBUG [2020-04-10 13:06:54,691] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,691] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,691] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,691] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,706] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:54,738] - Created connection 1787389208.
+DEBUG [2020-04-10 13:06:54,738] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:54,738] - ==> Parameters: fffffffffff(String)
+DEBUG [2020-04-10 13:06:54,738] - <==      Total: 0
+DEBUG [2020-04-10 13:06:54,738] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6a896518]
+DEBUG [2020-04-10 13:06:54,738] - Returned connection 1787389208 to pool.
+DEBUG [2020-04-10 13:06:54,852] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,852] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,852] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,852] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,867] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:06:54,883] - Opening JDBC Connection
+DEBUG [2020-04-10 13:06:54,914] - Created connection 369000899.
+DEBUG [2020-04-10 13:06:54,914] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:06:54,914] - ==> Parameters: ffffffffffff(String)
+DEBUG [2020-04-10 13:06:54,914] - <==      Total: 0
+DEBUG [2020-04-10 13:06:54,914] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@15fe81c3]
+DEBUG [2020-04-10 13:06:54,914] - Returned connection 369000899 to pool.
+DEBUG [2020-04-10 13:07:47,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:07,121] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:07,121] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:07,121] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:07,121] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:07,127] - Opening JDBC Connection
+DEBUG [2020-04-10 13:12:07,158] - Created connection 658730770.
+DEBUG [2020-04-10 13:12:07,158] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:12:07,158] - ==> Parameters: ㄹ(String)
+DEBUG [2020-04-10 13:12:07,158] - <==      Total: 0
+DEBUG [2020-04-10 13:12:07,158] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@27436f12]
+DEBUG [2020-04-10 13:12:07,158] - Returned connection 658730770 to pool.
+DEBUG [2020-04-10 13:12:08,484] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,484] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,484] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,484] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,500] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,516] - Opening JDBC Connection
+DEBUG [2020-04-10 13:12:08,547] - Created connection 1289435276.
+DEBUG [2020-04-10 13:12:08,547] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:12:08,547] - ==> Parameters: ㄹㄹ(String)
+DEBUG [2020-04-10 13:12:08,547] - <==      Total: 0
+DEBUG [2020-04-10 13:12:08,547] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4cdb388c]
+DEBUG [2020-04-10 13:12:08,547] - Returned connection 1289435276 to pool.
+DEBUG [2020-04-10 13:12:08,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:08,676] - Opening JDBC Connection
+DEBUG [2020-04-10 13:12:08,709] - Created connection 1581657462.
+DEBUG [2020-04-10 13:12:08,709] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:12:08,709] - ==> Parameters: ㄹㄹㄹ(String)
+DEBUG [2020-04-10 13:12:08,710] - <==      Total: 0
+DEBUG [2020-04-10 13:12:08,710] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5e462d76]
+DEBUG [2020-04-10 13:12:08,710] - Returned connection 1581657462 to pool.
+DEBUG [2020-04-10 13:12:24,323] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,323] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,323] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,323] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,328] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:24,338] - Opening JDBC Connection
+DEBUG [2020-04-10 13:12:24,339] - Opening JDBC Connection
+DEBUG [2020-04-10 13:12:24,369] - Created connection 1791236191.
+DEBUG [2020-04-10 13:12:24,369] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:12:24,369] - ==> Parameters: itsm(String)
+DEBUG [2020-04-10 13:12:24,370] - <==      Total: 0
+DEBUG [2020-04-10 13:12:24,370] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6ac4185f]
+DEBUG [2020-04-10 13:12:24,370] - Returned connection 1791236191 to pool.
+DEBUG [2020-04-10 13:12:24,398] - Created connection 560496583.
+DEBUG [2020-04-10 13:12:24,398] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:12:24,398] - ==> Parameters: itsme(String)
+DEBUG [2020-04-10 13:12:24,399] - <==      Total: 0
+DEBUG [2020-04-10 13:12:24,399] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@21687fc7]
+DEBUG [2020-04-10 13:12:24,399] - Returned connection 560496583 to pool.
+DEBUG [2020-04-10 13:12:28,710] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:28,711] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:28,712] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:12:28,714] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,169] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,169] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,169] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,169] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,185] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:06,216] - Created connection 700563923.
+DEBUG [2020-04-10 13:14:06,216] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:06,216] - ==> Parameters: itsmeA(String)
+DEBUG [2020-04-10 13:14:06,216] - <==      Total: 0
+DEBUG [2020-04-10 13:14:06,216] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@29c1c1d3]
+DEBUG [2020-04-10 13:14:06,216] - Returned connection 700563923 to pool.
+DEBUG [2020-04-10 13:14:06,252] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,252] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,252] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,252] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:06,257] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:06,277] - Created connection 2063317307.
+DEBUG [2020-04-10 13:14:06,277] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:06,277] - ==> Parameters: itsmeA(String)
+DEBUG [2020-04-10 13:14:06,277] - <==      Total: 0
+DEBUG [2020-04-10 13:14:06,277] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7afbb93b]
+DEBUG [2020-04-10 13:14:06,277] - Returned connection 2063317307 to pool.
+DEBUG [2020-04-10 13:14:07,556] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:07,556] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:07,556] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:07,557] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:07,570] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:07,598] - Created connection 1374855643.
+DEBUG [2020-04-10 13:14:07,599] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:07,599] - ==> Parameters: itsme(String)
+DEBUG [2020-04-10 13:14:07,599] - <==      Total: 0
+DEBUG [2020-04-10 13:14:07,599] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@51f2a1db]
+DEBUG [2020-04-10 13:14:07,599] - Returned connection 1374855643 to pool.
+DEBUG [2020-04-10 13:14:09,780] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:09,781] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:09,781] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:09,781] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:09,800] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:09,841] - Created connection 1847807271.
+DEBUG [2020-04-10 13:14:09,841] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:09,841] - ==> Parameters: itsmeA(String)
+DEBUG [2020-04-10 13:14:09,841] - <==      Total: 0
+DEBUG [2020-04-10 13:14:09,841] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6e234d27]
+DEBUG [2020-04-10 13:14:09,841] - Returned connection 1847807271 to pool.
+DEBUG [2020-04-10 13:14:10,145] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,146] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,146] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,146] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,160] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:10,204] - Created connection 2112460819.
+DEBUG [2020-04-10 13:14:10,204] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:10,204] - ==> Parameters: itsmeAS(String)
+DEBUG [2020-04-10 13:14:10,205] - <==      Total: 0
+DEBUG [2020-04-10 13:14:10,205] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7de99813]
+DEBUG [2020-04-10 13:14:10,205] - Returned connection 2112460819 to pool.
+DEBUG [2020-04-10 13:14:10,497] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,497] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,497] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,497] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:10,500] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:10,544] - Created connection 1643885241.
+DEBUG [2020-04-10 13:14:10,544] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:10,544] - ==> Parameters: itsmeAS(String)
+DEBUG [2020-04-10 13:14:10,545] - <==      Total: 0
+DEBUG [2020-04-10 13:14:10,545] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@61fbb2b9]
+DEBUG [2020-04-10 13:14:10,545] - Returned connection 1643885241 to pool.
+DEBUG [2020-04-10 13:14:11,877] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:11,877] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:11,877] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:11,877] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:11,908] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:11,955] - Created connection 2000152318.
+DEBUG [2020-04-10 13:14:11,955] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:11,955] - ==> Parameters: itsmeAS1(String)
+DEBUG [2020-04-10 13:14:11,955] - <==      Total: 0
+DEBUG [2020-04-10 13:14:11,955] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7737e6fe]
+DEBUG [2020-04-10 13:14:11,955] - Returned connection 2000152318 to pool.
+DEBUG [2020-04-10 13:14:12,101] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,117] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,133] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,133] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,148] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,148] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,148] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:12,179] - Created connection 1684731278.
+DEBUG [2020-04-10 13:14:12,179] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:12,179] - ==> Parameters: itsmeAS12(String)
+DEBUG [2020-04-10 13:14:12,179] - <==      Total: 0
+DEBUG [2020-04-10 13:14:12,179] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@646af58e]
+DEBUG [2020-04-10 13:14:12,179] - Returned connection 1684731278 to pool.
+DEBUG [2020-04-10 13:14:12,402] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,402] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,402] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,402] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,402] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:12,433] - Created connection 1260230761.
+DEBUG [2020-04-10 13:14:12,433] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:12,433] - ==> Parameters: itsmeAS123(String)
+DEBUG [2020-04-10 13:14:12,433] - <==      Total: 0
+DEBUG [2020-04-10 13:14:12,433] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4b1d9869]
+DEBUG [2020-04-10 13:14:12,433] - Returned connection 1260230761 to pool.
+DEBUG [2020-04-10 13:14:12,818] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,818] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,818] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,818] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,826] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:12,868] - Created connection 509871344.
+DEBUG [2020-04-10 13:14:12,868] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:12,869] - ==> Parameters: itsmeAS12(String)
+DEBUG [2020-04-10 13:14:12,871] - <==      Total: 0
+DEBUG [2020-04-10 13:14:12,871] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1e6404f0]
+DEBUG [2020-04-10 13:14:12,871] - Returned connection 509871344 to pool.
+DEBUG [2020-04-10 13:14:12,973] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,973] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,973] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,973] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:12,984] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:13,014] - Created connection 1290741145.
+DEBUG [2020-04-10 13:14:13,014] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:13,014] - ==> Parameters: itsmeAS1(String)
+DEBUG [2020-04-10 13:14:13,014] - <==      Total: 0
+DEBUG [2020-04-10 13:14:13,015] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4cef2599]
+DEBUG [2020-04-10 13:14:13,015] - Returned connection 1290741145 to pool.
+DEBUG [2020-04-10 13:14:13,119] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,120] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,120] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,120] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,140] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:13,188] - Created connection 81296778.
+DEBUG [2020-04-10 13:14:13,188] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:13,188] - ==> Parameters: itsmeAS(String)
+DEBUG [2020-04-10 13:14:13,189] - <==      Total: 0
+DEBUG [2020-04-10 13:14:13,189] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4d87d8a]
+DEBUG [2020-04-10 13:14:13,189] - Returned connection 81296778 to pool.
+DEBUG [2020-04-10 13:14:13,276] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,277] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,277] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,277] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,284] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:13,308] - Created connection 1621170234.
+DEBUG [2020-04-10 13:14:13,308] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:13,308] - ==> Parameters: itsmeA(String)
+DEBUG [2020-04-10 13:14:13,308] - <==      Total: 0
+DEBUG [2020-04-10 13:14:13,309] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@60a1183a]
+DEBUG [2020-04-10 13:14:13,309] - Returned connection 1621170234 to pool.
+DEBUG [2020-04-10 13:14:13,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,439] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:13,482] - Created connection 178323555.
+DEBUG [2020-04-10 13:14:13,482] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:13,482] - ==> Parameters: itsme(String)
+DEBUG [2020-04-10 13:14:13,483] - <==      Total: 0
+DEBUG [2020-04-10 13:14:13,483] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@aa10063]
+DEBUG [2020-04-10 13:14:13,483] - Returned connection 178323555 to pool.
+DEBUG [2020-04-10 13:14:13,638] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,642] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,645] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,645] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,648] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,649] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,650] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,655] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,655] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,655] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,655] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:13,659] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:13,716] - Created connection 1327945479.
+DEBUG [2020-04-10 13:14:13,716] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:13,716] - ==> Parameters: itsm(String)
+DEBUG [2020-04-10 13:14:13,717] - <==      Total: 0
+DEBUG [2020-04-10 13:14:13,717] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4f26d707]
+DEBUG [2020-04-10 13:14:13,717] - Returned connection 1327945479 to pool.
+DEBUG [2020-04-10 13:14:16,947] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:16,947] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:16,947] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:16,947] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:16,963] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:17,004] - Created connection 1567450704.
+DEBUG [2020-04-10 13:14:17,004] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:17,004] - ==> Parameters: Addd(String)
+DEBUG [2020-04-10 13:14:17,005] - <==      Total: 0
+DEBUG [2020-04-10 13:14:17,005] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5d6d6650]
+DEBUG [2020-04-10 13:14:17,005] - Returned connection 1567450704 to pool.
+DEBUG [2020-04-10 13:14:17,124] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,124] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,124] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,124] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,139] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:17,177] - Created connection 615265.
+DEBUG [2020-04-10 13:14:17,177] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:17,177] - ==> Parameters: Adddd(String)
+DEBUG [2020-04-10 13:14:17,177] - <==      Total: 0
+DEBUG [2020-04-10 13:14:17,177] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@96361]
+DEBUG [2020-04-10 13:14:17,177] - Returned connection 615265 to pool.
+DEBUG [2020-04-10 13:14:17,299] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,299] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,299] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,299] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:17,315] - Opening JDBC Connection
+DEBUG [2020-04-10 13:14:17,346] - Created connection 1333026840.
+DEBUG [2020-04-10 13:14:17,346] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:14:17,346] - ==> Parameters: Addddd(String)
+DEBUG [2020-04-10 13:14:17,346] - <==      Total: 0
+DEBUG [2020-04-10 13:14:17,346] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4f746018]
+DEBUG [2020-04-10 13:14:17,346] - Returned connection 1333026840 to pool.
+DEBUG [2020-04-10 13:14:27,031] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:27,046] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:27,046] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:14:27,046] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,038] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 13:22:43,163] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,163] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,163] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,163] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,272] - Opening JDBC Connection
+DEBUG [2020-04-10 13:22:43,303] - Created connection 401871248.
+DEBUG [2020-04-10 13:22:43,303] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:22:43,303] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 13:22:43,303] - <==      Total: 0
+DEBUG [2020-04-10 13:22:43,303] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@17f41190]
+DEBUG [2020-04-10 13:22:43,303] - Returned connection 401871248 to pool.
+DEBUG [2020-04-10 13:22:43,669] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,669] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,669] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,669] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:43,684] - Opening JDBC Connection
+DEBUG [2020-04-10 13:22:43,731] - Created connection 148772312.
+DEBUG [2020-04-10 13:22:43,731] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:22:43,731] - ==> Parameters: itsme10(String)
+DEBUG [2020-04-10 13:22:43,731] - <==      Total: 0
+DEBUG [2020-04-10 13:22:43,731] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@8de15d8]
+DEBUG [2020-04-10 13:22:43,731] - Returned connection 148772312 to pool.
+DEBUG [2020-04-10 13:22:44,239] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,239] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,240] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,240] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,240] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,240] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,244] - Opening JDBC Connection
+DEBUG [2020-04-10 13:22:44,260] - Created connection 2027382577.
+DEBUG [2020-04-10 13:22:44,260] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:22:44,260] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:22:44,260] - <==      Total: 0
+DEBUG [2020-04-10 13:22:44,260] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@78d76731]
+DEBUG [2020-04-10 13:22:44,260] - Returned connection 2027382577 to pool.
+DEBUG [2020-04-10 13:22:44,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,360] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,373] - Opening JDBC Connection
+DEBUG [2020-04-10 13:22:44,403] - Created connection 936065166.
+DEBUG [2020-04-10 13:22:44,404] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:22:44,404] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:22:44,405] - <==      Total: 0
+DEBUG [2020-04-10 13:22:44,405] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@37cb388e]
+DEBUG [2020-04-10 13:22:44,405] - Returned connection 936065166 to pool.
+DEBUG [2020-04-10 13:22:44,525] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,525] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,525] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,525] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:44,529] - Opening JDBC Connection
+DEBUG [2020-04-10 13:22:44,545] - Created connection 473775521.
+DEBUG [2020-04-10 13:22:44,545] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:22:44,545] - ==> Parameters: itsme10231(String)
+DEBUG [2020-04-10 13:22:44,545] - <==      Total: 0
+DEBUG [2020-04-10 13:22:44,545] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1c3d3da1]
+DEBUG [2020-04-10 13:22:44,545] - Returned connection 473775521 to pool.
+DEBUG [2020-04-10 13:22:49,684] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:49,695] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:22:49,696] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:30,439] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 13:26:30,560] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:30,560] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:30,560] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:30,560] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:30,694] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:30,719] - Created connection 209004560.
+DEBUG [2020-04-10 13:26:30,723] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:30,725] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 13:26:30,731] - <==      Total: 0
+DEBUG [2020-04-10 13:26:30,731] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@c752810]
+DEBUG [2020-04-10 13:26:30,731] - Returned connection 209004560 to pool.
+DEBUG [2020-04-10 13:26:33,643] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:33,659] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:33,659] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:33,659] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:33,675] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:33,706] - Created connection 423159278.
+DEBUG [2020-04-10 13:26:33,706] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:33,706] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 13:26:33,706] - <==      Total: 0
+DEBUG [2020-04-10 13:26:33,706] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1938e5ee]
+DEBUG [2020-04-10 13:26:33,706] - Returned connection 423159278 to pool.
+DEBUG [2020-04-10 13:26:34,115] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,115] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,115] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,115] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,131] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:34,162] - Created connection 1278836294.
+DEBUG [2020-04-10 13:26:34,162] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:34,162] - ==> Parameters: itsme10(String)
+DEBUG [2020-04-10 13:26:34,162] - <==      Total: 0
+DEBUG [2020-04-10 13:26:34,162] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4c397e46]
+DEBUG [2020-04-10 13:26:34,162] - Returned connection 1278836294 to pool.
+DEBUG [2020-04-10 13:26:34,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,320] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,332] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:34,359] - Created connection 604612237.
+DEBUG [2020-04-10 13:26:34,359] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:34,359] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:26:34,359] - <==      Total: 0
+DEBUG [2020-04-10 13:26:34,359] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2409a68d]
+DEBUG [2020-04-10 13:26:34,359] - Returned connection 604612237 to pool.
+DEBUG [2020-04-10 13:26:34,426] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,427] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,427] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,427] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,432] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,432] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,432] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,432] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,432] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:34,473] - Created connection 1330589281.
+DEBUG [2020-04-10 13:26:34,473] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:34,473] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 13:26:34,474] - <==      Total: 0
+DEBUG [2020-04-10 13:26:34,474] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4f4f2e61]
+DEBUG [2020-04-10 13:26:34,474] - Returned connection 1330589281 to pool.
+DEBUG [2020-04-10 13:26:34,604] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,604] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,604] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,605] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:34,609] - Opening JDBC Connection
+DEBUG [2020-04-10 13:26:34,625] - Created connection 1375304306.
+DEBUG [2020-04-10 13:26:34,625] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 13:26:34,625] - ==> Parameters: itsme10231(String)
+DEBUG [2020-04-10 13:26:34,640] - <==      Total: 0
+DEBUG [2020-04-10 13:26:34,640] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@51f97a72]
+DEBUG [2020-04-10 13:26:34,641] - Returned connection 1375304306 to pool.
+DEBUG [2020-04-10 13:26:46,545] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:26:46,545] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:27:15,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:27:15,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:27:15,434] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:27:15,435] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 13:27:15,440] - Opening JDBC Connection
+DEBUG [2020-04-10 13:27:15,469] - Created connection 361071471.
+DEBUG [2020-04-10 13:27:15,469] - ==>  Preparing: INSERT INTO USERINFO VALUES(?, ?, ?, ?, ?, 'USER', 'N'); 
+DEBUG [2020-04-10 13:27:15,469] - ==> Parameters: itsme10231(String), jang3565(String), Me(String), rayrynencia@naver.com(String), 21100 인천광역시 계양구 봉오대로477번길 20 (String)
+DEBUG [2020-04-10 13:27:15,483] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1585836f]
+DEBUG [2020-04-10 13:27:15,483] - Returned connection 361071471 to pool.
+DEBUG [2020-04-10 13:27:19,190] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,623] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 14:53:41,745] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,745] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,745] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,746] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,746] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,746] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,746] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,746] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,897] - Opening JDBC Connection
+DEBUG [2020-04-10 14:53:41,897] - Opening JDBC Connection
+DEBUG [2020-04-10 14:53:41,897] - Opening JDBC Connection
+DEBUG [2020-04-10 14:53:41,938] - Created connection 1984359106.
+DEBUG [2020-04-10 14:53:41,942] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:53:41,945] - ==> Parameters: gggghh(String)
+DEBUG [2020-04-10 14:53:41,951] - <==      Total: 0
+DEBUG [2020-04-10 14:53:41,952] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7646eac2]
+DEBUG [2020-04-10 14:53:41,952] - Returned connection 1984359106 to pool.
+DEBUG [2020-04-10 14:53:41,966] - Created connection 2138657965.
+DEBUG [2020-04-10 14:53:41,966] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:53:41,967] - ==> Parameters: gggghhh(String)
+DEBUG [2020-04-10 14:53:41,967] - <==      Total: 0
+DEBUG [2020-04-10 14:53:41,968] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7f7954ad]
+DEBUG [2020-04-10 14:53:41,968] - Returned connection 2138657965 to pool.
+DEBUG [2020-04-10 14:53:41,976] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,976] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,976] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,977] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:41,984] - Opening JDBC Connection
+DEBUG [2020-04-10 14:53:42,036] - Created connection 730630689.
+DEBUG [2020-04-10 14:53:42,036] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:53:42,037] - ==> Parameters: gggghhhh(String)
+DEBUG [2020-04-10 14:53:42,037] - <==      Total: 0
+DEBUG [2020-04-10 14:53:42,037] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2b8c8a21]
+DEBUG [2020-04-10 14:53:42,037] - Returned connection 730630689 to pool.
+DEBUG [2020-04-10 14:53:42,066] - Created connection 719750576.
+DEBUG [2020-04-10 14:53:42,066] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:53:42,066] - ==> Parameters: gggghhhhh(String)
+DEBUG [2020-04-10 14:53:42,067] - <==      Total: 0
+DEBUG [2020-04-10 14:53:42,067] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2ae685b0]
+DEBUG [2020-04-10 14:53:42,067] - Returned connection 719750576 to pool.
+DEBUG [2020-04-10 14:53:42,157] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,157] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,157] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,157] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,164] - Opening JDBC Connection
+DEBUG [2020-04-10 14:53:42,191] - Created connection 1009302718.
+DEBUG [2020-04-10 14:53:42,191] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:53:42,191] - ==> Parameters: gggghhhhhh(String)
+DEBUG [2020-04-10 14:53:42,192] - <==      Total: 0
+DEBUG [2020-04-10 14:53:42,192] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3c28bcbe]
+DEBUG [2020-04-10 14:53:42,192] - Returned connection 1009302718 to pool.
+DEBUG [2020-04-10 14:53:42,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:53:42,562] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:09,206] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:09,206] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:09,207] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:09,207] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:09,221] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:09,249] - Created connection 1651223658.
+DEBUG [2020-04-10 14:58:09,249] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:09,249] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 14:58:09,249] - <==      Total: 0
+DEBUG [2020-04-10 14:58:09,249] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@626bac6a]
+DEBUG [2020-04-10 14:58:09,249] - Returned connection 1651223658 to pool.
+DEBUG [2020-04-10 14:58:11,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:11,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:11,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:11,660] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:11,665] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:11,671] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:11,696] - Created connection 1923371484.
+DEBUG [2020-04-10 14:58:11,696] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:11,696] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 14:58:11,696] - <==      Total: 0
+DEBUG [2020-04-10 14:58:11,696] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@72a451dc]
+DEBUG [2020-04-10 14:58:11,697] - Returned connection 1923371484 to pool.
+DEBUG [2020-04-10 14:58:12,876] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:12,876] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:12,876] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:12,877] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:12,886] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:12,923] - Created connection 1116427608.
+DEBUG [2020-04-10 14:58:12,923] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:12,923] - ==> Parameters: itsme10(String)
+DEBUG [2020-04-10 14:58:12,923] - <==      Total: 0
+DEBUG [2020-04-10 14:58:12,924] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@428b5558]
+DEBUG [2020-04-10 14:58:12,924] - Returned connection 1116427608 to pool.
+DEBUG [2020-04-10 14:58:13,161] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,161] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,161] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,161] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,172] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:13,200] - Created connection 1905232391.
+DEBUG [2020-04-10 14:58:13,200] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:13,200] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 14:58:13,201] - <==      Total: 0
+DEBUG [2020-04-10 14:58:13,201] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@718f8a07]
+DEBUG [2020-04-10 14:58:13,201] - Returned connection 1905232391 to pool.
+DEBUG [2020-04-10 14:58:13,229] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,231] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,232] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,234] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,234] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,235] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,235] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,244] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:13,267] - Created connection 2036315412.
+DEBUG [2020-04-10 14:58:13,267] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:13,267] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 14:58:13,268] - <==      Total: 0
+DEBUG [2020-04-10 14:58:13,268] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@795fb514]
+DEBUG [2020-04-10 14:58:13,268] - Returned connection 2036315412 to pool.
+DEBUG [2020-04-10 14:58:13,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,406] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,407] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:13,421] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:13,443] - Created connection 359576626.
+DEBUG [2020-04-10 14:58:13,443] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 14:58:13,443] - ==> Parameters: itsme10231(String)
+DEBUG [2020-04-10 14:58:13,445] - <==      Total: 0
+DEBUG [2020-04-10 14:58:13,446] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@156eb432]
+DEBUG [2020-04-10 14:58:13,446] - Returned connection 359576626 to pool.
+DEBUG [2020-04-10 14:58:22,641] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:22,641] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:48,188] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:48,188] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:48,188] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:48,188] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 14:58:48,193] - Opening JDBC Connection
+DEBUG [2020-04-10 14:58:48,218] - Created connection 785978420.
+DEBUG [2020-04-10 14:58:48,218] - ==>  Preparing: INSERT INTO USERINFO VALUES(?, ?, ?, ?, ?, 'USER', 'N'); 
+DEBUG [2020-04-10 14:58:48,218] - ==> Parameters: itsme10231(String), jang3565(String), me(String), rayrynencia@naver.com(String), 21100 인천광역시 계양구 봉오대로477번길 20 (String)
+DEBUG [2020-04-10 14:58:48,224] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2ed91434]
+DEBUG [2020-04-10 14:58:48,224] - Returned connection 785978420 to pool.
+DEBUG [2020-04-10 14:58:54,655] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:02,900] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 15:00:03,024] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,024] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,024] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,026] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,089] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,089] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,089] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,089] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,166] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:03,166] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:03,166] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:03,166] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:03,197] - Created connection 1920404905.
+DEBUG [2020-04-10 15:00:03,197] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 15:00:03,197] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 15:00:03,197] - <==      Total: 0
+DEBUG [2020-04-10 15:00:03,197] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@72770da9]
+DEBUG [2020-04-10 15:00:03,197] - Returned connection 1920404905 to pool.
+DEBUG [2020-04-10 15:00:03,217] - Created connection 1520987626.
+DEBUG [2020-04-10 15:00:03,217] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 15:00:03,217] - ==> Parameters: itsme10(String)
+DEBUG [2020-04-10 15:00:03,217] - <==      Total: 0
+DEBUG [2020-04-10 15:00:03,217] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5aa86dea]
+DEBUG [2020-04-10 15:00:03,217] - Returned connection 1520987626 to pool.
+DEBUG [2020-04-10 15:00:03,233] - Created connection 1240780258.
+DEBUG [2020-04-10 15:00:03,233] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 15:00:03,233] - ==> Parameters: itsme1(String)
+DEBUG [2020-04-10 15:00:03,233] - <==      Total: 0
+DEBUG [2020-04-10 15:00:03,233] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@49f4cde2]
+DEBUG [2020-04-10 15:00:03,233] - Returned connection 1240780258 to pool.
+DEBUG [2020-04-10 15:00:03,264] - Created connection 1903946.
+DEBUG [2020-04-10 15:00:03,264] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 15:00:03,265] - ==> Parameters: itsme1023(String)
+DEBUG [2020-04-10 15:00:03,265] - <==      Total: 0
+DEBUG [2020-04-10 15:00:03,265] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1d0d4a]
+DEBUG [2020-04-10 15:00:03,265] - Returned connection 1903946 to pool.
+DEBUG [2020-04-10 15:00:03,277] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,278] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,278] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,278] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:03,282] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:03,304] - Created connection 1191397471.
+DEBUG [2020-04-10 15:00:03,304] - ==>  Preparing: SELECT ID FROM USERINFO WHERE ID = ? 
+DEBUG [2020-04-10 15:00:03,304] - ==> Parameters: itsme10231(String)
+DEBUG [2020-04-10 15:00:03,305] - <==      Total: 0
+DEBUG [2020-04-10 15:00:03,305] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4703485f]
+DEBUG [2020-04-10 15:00:03,305] - Returned connection 1191397471 to pool.
+DEBUG [2020-04-10 15:00:10,058] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:10,059] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:10,060] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:10,060] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:10,061] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:33,670] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:33,670] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:33,670] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:33,670] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:00:33,676] - Opening JDBC Connection
+DEBUG [2020-04-10 15:00:33,701] - Created connection 1997538600.
+DEBUG [2020-04-10 15:00:33,701] - ==>  Preparing: INSERT INTO USERINFO VALUES(?, ?, ?, ?, ?, 'USER', 'N') 
+DEBUG [2020-04-10 15:00:33,701] - ==> Parameters: itsme10231(String), jang3565(String), me(String), rayrynencia@naver.com(String), 21100 인천광역시 계양구 봉오대로477번길 20 (String)
+DEBUG [2020-04-10 15:00:33,728] - <==    Updates: 1
+DEBUG [2020-04-10 15:00:33,728] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@77100528]
+DEBUG [2020-04-10 15:00:33,729] - Returned connection 1997538600 to pool.
+DEBUG [2020-04-10 15:00:42,632] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:24:52,264] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 15:24:52,362] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:24:52,362] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:24:52,362] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:24:52,363] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:24:52,495] - Opening JDBC Connection
+DEBUG [2020-04-10 15:24:52,521] - Created connection 82781398.
+DEBUG [2020-04-10 15:24:52,524] - ==>  Preparing: SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG FROM USERINFO WHERE ID = ? AND PASSWORD = ? AND DELFLAG = 'N' 
+DEBUG [2020-04-10 15:24:52,526] - ==> Parameters: ㅎㅎ(String), ㄹㄹㄹㄹ(String)
+DEBUG [2020-04-10 15:24:52,538] - <==      Total: 0
+DEBUG [2020-04-10 15:24:52,539] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4ef24d6]
+DEBUG [2020-04-10 15:24:52,539] - Returned connection 82781398 to pool.
+DEBUG [2020-04-10 15:24:54,506] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:14,326] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:14,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:14,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:14,327] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:14,333] - Opening JDBC Connection
+DEBUG [2020-04-10 15:25:14,358] - Created connection 988039034.
+DEBUG [2020-04-10 15:25:14,358] - ==>  Preparing: SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG FROM USERINFO WHERE ID = ? AND PASSWORD = ? AND DELFLAG = 'N' 
+DEBUG [2020-04-10 15:25:14,358] - ==> Parameters: admin(String), admin(String)
+DEBUG [2020-04-10 15:25:14,359] - <==      Total: 0
+DEBUG [2020-04-10 15:25:14,359] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ae4477a]
+DEBUG [2020-04-10 15:25:14,359] - Returned connection 988039034 to pool.
+DEBUG [2020-04-10 15:25:20,906] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:20,906] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:20,906] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:20,906] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:20,913] - Opening JDBC Connection
+DEBUG [2020-04-10 15:25:20,938] - Created connection 34745463.
+DEBUG [2020-04-10 15:25:20,938] - ==>  Preparing: SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG FROM USERINFO WHERE ID = ? AND PASSWORD = ? AND DELFLAG = 'N' 
+DEBUG [2020-04-10 15:25:20,938] - ==> Parameters: admin(String), jang3565(String)
+DEBUG [2020-04-10 15:25:20,941] - <==      Total: 1
+DEBUG [2020-04-10 15:25:20,941] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2122c77]
+DEBUG [2020-04-10 15:25:20,942] - Returned connection 34745463 to pool.
+DEBUG [2020-04-10 15:25:26,690] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:26,695] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:58,545] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:58,546] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:58,546] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:58,546] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:25:58,552] - Opening JDBC Connection
+DEBUG [2020-04-10 15:25:58,577] - Created connection 1939125638.
+DEBUG [2020-04-10 15:25:58,577] - ==>  Preparing: SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG FROM USERINFO WHERE ID = ? AND PASSWORD = ? AND DELFLAG = 'N' 
+DEBUG [2020-04-10 15:25:58,578] - ==> Parameters: admin(String), admin(String)
+DEBUG [2020-04-10 15:25:58,578] - <==      Total: 0
+DEBUG [2020-04-10 15:25:58,579] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7394b586]
+DEBUG [2020-04-10 15:25:58,579] - Returned connection 1939125638 to pool.
+DEBUG [2020-04-10 15:25:59,094] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:26:57,293] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 15:26:57,393] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:26:57,393] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:26:57,393] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:26:57,393] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:26:57,501] - Opening JDBC Connection
+DEBUG [2020-04-10 15:26:57,528] - Created connection 17698605.
+DEBUG [2020-04-10 15:26:57,531] - ==>  Preparing: SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG FROM USERINFO WHERE ID = ? AND PASSWORD = ? AND DELFLAG = 'N' 
+DEBUG [2020-04-10 15:26:57,534] - ==> Parameters: admin(String), jang3565(String)
+DEBUG [2020-04-10 15:26:57,540] - <==      Total: 1
+DEBUG [2020-04-10 15:26:57,541] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@10e0f2d]
+DEBUG [2020-04-10 15:26:57,541] - Returned connection 17698605 to pool.
+DEBUG [2020-04-10 15:27:03,322] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:41:40,783] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 15:41:40,895] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:41:40,895] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:41:40,895] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:41:40,895] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:41:41,075] - Opening JDBC Connection
+DEBUG [2020-04-10 15:41:41,107] - Created connection 978654595.
+DEBUG [2020-04-10 15:41:41,111] - ==>  Preparing: SELECT RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 15:41:41,115] - ==> Parameters: 계(String), 20(String), 1(String)
+DEBUG [2020-04-10 15:41:41,152] - <==      Total: 20
+DEBUG [2020-04-10 15:41:41,153] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3a551583]
+DEBUG [2020-04-10 15:41:41,153] - Returned connection 978654595 to pool.
+DEBUG [2020-04-10 15:43:54,829] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:43:54,831] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:43:54,831] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:43:54,831] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:43:54,841] - Opening JDBC Connection
+DEBUG [2020-04-10 15:43:54,866] - Created connection 1215693735.
+DEBUG [2020-04-10 15:43:54,866] - ==>  Preparing: SELECT RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_NAME LIKE '%'||?||'%' AND MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 15:43:54,866] - ==> Parameters: 계(String), 28(String), 20(String), 1(String)
+DEBUG [2020-04-10 15:43:54,870] - <==      Total: 1
+DEBUG [2020-04-10 15:43:54,871] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@487603a7]
+DEBUG [2020-04-10 15:43:54,871] - Returned connection 1215693735 to pool.
+DEBUG [2020-04-10 15:44:00,308] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:44:00,308] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:44:00,308] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:44:00,308] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 15:44:00,316] - Opening JDBC Connection
+DEBUG [2020-04-10 15:44:00,340] - Created connection 322159814.
+DEBUG [2020-04-10 15:44:00,340] - ==>  Preparing: SELECT RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 15:44:00,340] - ==> Parameters: 28(String), 20(String), 1(String)
+DEBUG [2020-04-10 15:44:00,343] - <==      Total: 20
+DEBUG [2020-04-10 15:44:00,343] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1333c4c6]
+DEBUG [2020-04-10 15:44:00,343] - Returned connection 322159814 to pool.
+DEBUG [2020-04-10 16:18:17,716] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:18:17,721] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:18:17,722] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:35:31,050] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 16:35:31,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:35:31,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:35:31,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:35:31,198] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:35:31,378] - Opening JDBC Connection
+DEBUG [2020-04-10 16:35:31,412] - Created connection 1269779663.
+DEBUG [2020-04-10 16:35:31,415] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 16:35:31,417] - ==> Parameters: 28(String), 20(String), 1(String)
+DEBUG [2020-04-10 16:35:31,432] - <==      Total: 20
+DEBUG [2020-04-10 16:35:31,433] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4baf4ccf]
+DEBUG [2020-04-10 16:35:31,433] - Returned connection 1269779663 to pool.
+DEBUG [2020-04-10 16:35:32,163] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:48:02,369] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 16:48:02,503] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:48:02,503] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:48:02,503] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:48:02,503] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:48:02,663] - Opening JDBC Connection
+DEBUG [2020-04-10 16:48:02,688] - Created connection 1719047071.
+DEBUG [2020-04-10 16:48:02,692] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 16:48:02,694] - ==> Parameters: 26(String), 20(String), 1(String)
+DEBUG [2020-04-10 16:48:02,705] - <==      Total: 20
+DEBUG [2020-04-10 16:48:02,705] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6676939f]
+DEBUG [2020-04-10 16:48:02,705] - Returned connection 1719047071 to pool.
+DEBUG [2020-04-10 16:53:48,255] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:53:48,257] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:53:48,257] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:53:48,258] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:53:48,265] - Opening JDBC Connection
+DEBUG [2020-04-10 16:53:48,295] - Created connection 1147666221.
+DEBUG [2020-04-10 16:53:48,295] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL WHERE MNTN_CODE LIKE ?||'%' ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 16:53:48,295] - ==> Parameters: 30(String), 20(String), 1(String)
+DEBUG [2020-04-10 16:53:48,299] - <==      Total: 20
+DEBUG [2020-04-10 16:53:48,299] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4467ff2d]
+DEBUG [2020-04-10 16:53:48,299] - Returned connection 1147666221 to pool.
+DEBUG [2020-04-10 16:53:56,517] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:54:00,754] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:54:00,754] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:54:00,754] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:54:00,754] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:54:00,762] - Opening JDBC Connection
+DEBUG [2020-04-10 16:54:00,785] - Created connection 1311621863.
+DEBUG [2020-04-10 16:54:00,785] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 16:54:00,785] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 16:54:00,795] - <==      Total: 20
+DEBUG [2020-04-10 16:54:00,795] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4e2dc2e7]
+DEBUG [2020-04-10 16:54:00,795] - Returned connection 1311621863 to pool.
+DEBUG [2020-04-10 16:54:18,161] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:56:58,371] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:56:58,371] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:56:58,371] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:56:58,371] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 16:56:58,378] - Opening JDBC Connection
+DEBUG [2020-04-10 16:56:58,403] - Created connection 1737847459.
+DEBUG [2020-04-10 16:56:58,403] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 16:56:58,404] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 16:56:58,410] - <==      Total: 20
+DEBUG [2020-04-10 16:56:58,410] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@679572a3]
+DEBUG [2020-04-10 16:56:58,410] - Returned connection 1737847459 to pool.
+DEBUG [2020-04-10 16:56:59,721] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:00:43,048] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:00:43,048] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:00:43,048] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:00:43,048] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:00:43,056] - Opening JDBC Connection
+DEBUG [2020-04-10 17:00:43,092] - Created connection 1877926423.
+DEBUG [2020-04-10 17:00:43,092] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:00:43,093] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:00:43,098] - <==      Total: 20
+DEBUG [2020-04-10 17:00:43,098] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6feee217]
+DEBUG [2020-04-10 17:00:43,098] - Returned connection 1877926423 to pool.
+DEBUG [2020-04-10 17:00:46,237] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:06,851] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:01:06,948] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:06,948] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:06,948] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:06,948] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:07,112] - Opening JDBC Connection
+DEBUG [2020-04-10 17:01:07,135] - Created connection 2070060680.
+DEBUG [2020-04-10 17:01:07,138] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:01:07,140] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:01:07,153] - <==      Total: 20
+DEBUG [2020-04-10 17:01:07,153] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7b629e88]
+DEBUG [2020-04-10 17:01:07,153] - Returned connection 2070060680 to pool.
+DEBUG [2020-04-10 17:01:07,340] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:01:51,086] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:02:47,803] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:02:47,922] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:02:47,922] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:02:47,922] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:02:47,922] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:02:48,107] - Opening JDBC Connection
+DEBUG [2020-04-10 17:02:48,139] - Created connection 1831663626.
+DEBUG [2020-04-10 17:02:48,144] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:02:48,146] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:02:48,161] - <==      Total: 20
+DEBUG [2020-04-10 17:02:48,161] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6d2cf80a]
+DEBUG [2020-04-10 17:02:48,161] - Returned connection 1831663626 to pool.
+DEBUG [2020-04-10 17:03:54,111] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:03:54,230] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:03:54,230] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:03:54,231] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:03:54,231] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:03:54,385] - Opening JDBC Connection
+DEBUG [2020-04-10 17:03:54,413] - Created connection 275367092.
+DEBUG [2020-04-10 17:03:54,416] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:03:54,418] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:03:54,431] - <==      Total: 20
+DEBUG [2020-04-10 17:03:54,431] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1069c4b4]
+DEBUG [2020-04-10 17:03:54,431] - Returned connection 275367092 to pool.
+DEBUG [2020-04-10 17:07:28,663] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:07:28,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:07:28,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:07:28,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:07:28,760] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:07:28,912] - Opening JDBC Connection
+DEBUG [2020-04-10 17:07:28,938] - Created connection 1966490894.
+DEBUG [2020-04-10 17:07:28,943] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:07:28,945] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:07:28,958] - <==      Total: 20
+DEBUG [2020-04-10 17:07:28,959] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7536450e]
+DEBUG [2020-04-10 17:07:28,959] - Returned connection 1966490894 to pool.
+DEBUG [2020-04-10 17:08:56,360] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:08:56,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:08:56,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:08:56,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:08:56,457] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:08:56,612] - Opening JDBC Connection
+DEBUG [2020-04-10 17:08:56,637] - Created connection 298187741.
+DEBUG [2020-04-10 17:08:56,640] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:08:56,642] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:08:56,656] - <==      Total: 20
+DEBUG [2020-04-10 17:08:56,656] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@11c5fbdd]
+DEBUG [2020-04-10 17:08:56,657] - Returned connection 298187741 to pool.
+DEBUG [2020-04-10 17:12:27,427] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [2020-04-10 17:12:27,550] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:27,551] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:27,551] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:27,551] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:27,717] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:27,740] - Created connection 636834593.
+DEBUG [2020-04-10 17:12:27,744] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:27,745] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:12:27,760] - <==      Total: 20
+DEBUG [2020-04-10 17:12:27,760] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@25f55321]
+DEBUG [2020-04-10 17:12:27,760] - Returned connection 636834593 to pool.
+DEBUG [2020-04-10 17:12:30,309] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:30,310] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:30,311] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:30,311] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:30,321] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:30,349] - Created connection 335904360.
+DEBUG [2020-04-10 17:12:30,350] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:30,350] - ==> Parameters: 20(String), 2(String)
+DEBUG [2020-04-10 17:12:30,357] - <==      Total: 20
+DEBUG [2020-04-10 17:12:30,357] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@14057e68]
+DEBUG [2020-04-10 17:12:30,357] - Returned connection 335904360 to pool.
+DEBUG [2020-04-10 17:12:35,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:35,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:35,356] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:35,357] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:35,366] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:35,397] - Created connection 379017780.
+DEBUG [2020-04-10 17:12:35,397] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:35,397] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:12:35,404] - <==      Total: 20
+DEBUG [2020-04-10 17:12:35,404] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@16975a34]
+DEBUG [2020-04-10 17:12:35,404] - Returned connection 379017780 to pool.
+DEBUG [2020-04-10 17:12:37,382] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:37,382] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:37,382] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:37,382] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:37,387] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:37,394] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:37,419] - Created connection 1760014261.
+DEBUG [2020-04-10 17:12:37,419] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:37,419] - ==> Parameters: 20(String), 147(String)
+DEBUG [2020-04-10 17:12:37,427] - <==      Total: 11
+DEBUG [2020-04-10 17:12:37,427] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@68e7afb5]
+DEBUG [2020-04-10 17:12:37,428] - Returned connection 1760014261 to pool.
+DEBUG [2020-04-10 17:12:41,243] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:41,243] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:41,243] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:41,243] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:41,249] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:41,272] - Created connection 1491806549.
+DEBUG [2020-04-10 17:12:41,273] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:41,273] - ==> Parameters: 20(String), 146(String)
+DEBUG [2020-04-10 17:12:41,280] - <==      Total: 20
+DEBUG [2020-04-10 17:12:41,280] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@58eb2955]
+DEBUG [2020-04-10 17:12:41,280] - Returned connection 1491806549 to pool.
+DEBUG [2020-04-10 17:12:43,934] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:43,935] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:43,935] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:43,935] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:43,942] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:43,972] - Created connection 2083405311.
+DEBUG [2020-04-10 17:12:43,973] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:43,973] - ==> Parameters: 20(String), 147(String)
+DEBUG [2020-04-10 17:12:43,980] - <==      Total: 11
+DEBUG [2020-04-10 17:12:43,981] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7c2e3dff]
+DEBUG [2020-04-10 17:12:43,981] - Returned connection 2083405311 to pool.
+DEBUG [2020-04-10 17:12:44,574] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:44,575] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:45,486] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:45,487] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:45,487] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:45,487] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:45,493] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:45,517] - Created connection 1980301257.
+DEBUG [2020-04-10 17:12:45,517] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:45,517] - ==> Parameters: 20(String), 146(String)
+DEBUG [2020-04-10 17:12:45,522] - <==      Total: 20
+DEBUG [2020-04-10 17:12:45,522] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7608ffc9]
+DEBUG [2020-04-10 17:12:45,523] - Returned connection 1980301257 to pool.
+DEBUG [2020-04-10 17:12:48,703] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:48,704] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:48,704] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:48,704] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:48,710] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:48,732] - Created connection 714138369.
+DEBUG [2020-04-10 17:12:48,733] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:48,733] - ==> Parameters: 20(String), 145(String)
+DEBUG [2020-04-10 17:12:48,738] - <==      Total: 20
+DEBUG [2020-04-10 17:12:48,738] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a90e301]
+DEBUG [2020-04-10 17:12:48,738] - Returned connection 714138369 to pool.
+DEBUG [2020-04-10 17:12:51,378] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,378] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,378] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,378] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,384] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,385] - PooledDataSource forcefully closed/removed all connections.
+DEBUG [2020-04-10 17:12:51,387] - Opening JDBC Connection
+DEBUG [2020-04-10 17:12:51,410] - Created connection 739390370.
+DEBUG [2020-04-10 17:12:51,410] - ==>  Preparing: SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL ) WHERE CEIL(RN/?) = ? 
+DEBUG [2020-04-10 17:12:51,410] - ==> Parameters: 20(String), 1(String)
+DEBUG [2020-04-10 17:12:51,416] - <==      Total: 20
+DEBUG [2020-04-10 17:12:51,416] - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2c1233a2]
+DEBUG [2020-04-10 17:12:51,416] - Returned connection 739390370 to pool.

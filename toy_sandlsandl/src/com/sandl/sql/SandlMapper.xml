@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sandl.Sandle">
+	
+<!-- 	resultMap의 사용: database의 컬럼명과 dto의 멤버필드명이 다를경우 서로 맵핑시켜주는 용도(대소문자 여부까지 인식함) -->
+<!-- 		테이블의 join에서 사용가능한 collection 태그(해당 dto에 멤버필드 선언 및 getter, setter 메서드 필요) -->
+<!-- 		<collection property="dto 내에 선언된 멤버필드명" resultMap="리절트맵의 아이디"/> -->	
+
+	<resultMap type="com.sandl.dtos.CommentDto" id="CmtDtoMap">
+		<result property="seq" column="SEQ" />
+		<result property="id" column="ID" />
+		<result property="climbc" column="CLIMBC"/>
+		<result property="mcontent" column="MCONTENT" />
+		<result property="mlike" column="MLIKE" />
+		<result property="regdate" column="REGDATE" />
+		<result property="delflag" column="DELFLAG" />
+		<result property="pubflag" column="PUBFLAG" />
+		<result property="climbflag" column="CLIMBFLAG" />
+		<result property="pmntn_sn" column="PMNTN_SN"/>
+		<result property="sch_seq" column="SCH_SEQ"/>
+		<collection property="mntdto" resultMap="MntDtoMap"/>
+	</resultMap>
+	
+	<resultMap type="com.sandl.dtos.ScheduleDto" id="SchDtoMap">
+		<result property="seq" column="SEQ"/>
+		<result property="id" column="ID"/>
+		<result property="sdate" column="SDATE"/>
+		<result property="edate" column="EDATE"/>
+		<result property="mntn_code" column="MNTN_CODE"/>
+		<result property="mcontent" column="MCONTENT"/>
+		<result property="pubflag" column="PUBFLAG"/>
+		<result property="climbflag" column="CLIMBFLAG"/>
+		<result property="pmntn_sn" column="PMNTN_SN"/>
+		<collection property="mntdto" resultMap="MntDtoMap"/>
+	</resultMap>
+	
+	<resultMap type="com.sandl.dtos.WishDto" id="WishDtoMap">
+		<result property="seq" column="SEQ"/>
+		<result property="id" column="ID"/>
+		<result property="mntn_code" column="MNTN_CODE"/>
+		<collection property="mntdto" resultMap="MntDtoMap"/>
+	</resultMap>
+	
+	<resultMap type="com.sandl.dtos.MntDto" id="MntDtoMap">
+		<result property="seq" column="SEQ"/>
+		<result property="mntn_name" column="MNTN_NAME"/>
+		<result property="mntn_loc" column="MNTN_LOC"/>
+		<result property="mntn_code" column="MNTN_CODE"/>
+		<result property="scount" column="SCOUNT"/>
+	</resultMap>
+	
+	
+	<!-- 이하 산 탐색 관련 쿼리 -->
+	
+	<select id="searchMnt" parameterType="SearchDto" resultType="MntDto">
+		SELECT SCOUNT, RN, SEQ , MNTN_NAME , MNTN_LOC , MNTN_CODE 
+		FROM (SELECT COUNT(*) OVER() AS SCOUNT, ROW_NUMBER() OVER (ORDER BY MNTN_LOC ASC, MNTN_NAME DESC) AS RN, 
+				SEQ, MNTN_NAME , MNTN_LOC , MNTN_CODE FROM MNTN_VAL
+				<where>
+					<if test="climblist!=null">
+						MNTN_CODE NOT IN 
+						<foreach collection="climblist" open="(" close=")" separator="," item="cCode">
+							#{cCode}
+						</foreach>
+					</if>
+					<if test="!mname.equals('none')">
+						AND MNTN_NAME LIKE '%'||#{mname}||'%'
+					</if>
+					<if test="!mloc.equals('none')">
+						AND MNTN_CODE LIKE #{mloc}||'%'
+					</if>
+				</where>
+				) WHERE CEIL(RN/#{view}) = #{pnum}
+	</select>
+	
+	<select id="climblist" parameterType="String" resultType="int">
+		SELECT MNTN_CODE FROM MNTN_COMMENT WHERE ID = #{id}
+	</select>
+	
+	<select id="wishlist" parameterType="String" resultType="int">
+		SELECT MNTN_CODE FROM WISHLIST WHERE ID = #{id}
+	</select>
+	
+	<!-- 기준은 스케쥴에 입력된 sdate -->
+	<select id="topClimbMnt" parameterType="Map" resultType="CommentDto">
+		SELECT MNTN_CODE , MNTN_NAME , CLIMBC
+		FROM (SELECT ROW_NUMBER() OVER(ORDER BY CLIMBC DESC) AS RN, MNTN_CODE , MNTN_NAME , CLIMBC
+				FROM (SELECT mv.MNTN_CODE, mv.MNTN_NAME , COUNT(su.SEQ) AS CLIMBC 
+						FROM MNTN_VAL mv , SCHEDULE_U su 
+						WHERE su.MNTN_CODE = mv.MNTN_CODE 
+							AND TO_DATE(su.SDATE,'YYYYMMDD') BETWEEN TO_DATE(${today},'YYYYMMDD')-7 AND TO_DATE(${today},'YYYYMMDD')
+						GROUP BY mv.MNTN_CODE, mv.MNTN_NAME))
+		WHERE RN = 1
+	</select>
+
+	<select id="topLikeMnt" parameterType="Map" resultType="CommentDto">
+		SELECT MNTN_CODE , MNTN_NAME , SUMLIKE
+		FROM (SELECT ROW_NUMBER() OVER(ORDER BY SUMLIKE DESC) AS RN, MNTN_CODE , MNTN_NAME , SUMLIKE
+				FROM (SELECT mv.MNTN_CODE, mv.MNTN_NAME , SUM(mc.MLIKE) AS SUMLIKE 
+						FROM MNTN_VAL mv , MNTN_COMMENT mc 
+						WHERE mc.MNTN_CODE = mv.MNTN_CODE 
+							AND mc.REGDATE BETWEEN TO_DATE(${today},'YYYYMMDD')-7 AND TO_DATE(${today},'YYYYMMDD') 
+						GROUP BY mv.MNTN_CODE, mv.MNTN_NAME))
+		WHERE RN = 1
+	</select>
+	
+	
+	
+<!-- 	이하 로그인 관련 쿼리(LoginDto) -->
+	<insert id="insertUser" parameterType="LoginDto">
+		INSERT INTO USERINFO VALUES(#{id}, #{password}, #{name}, #{email}, #{address}, 'USER', 'N')
+	</insert>
+	
+	<select id="idCheck" parameterType="String" resultType="LoginDto">
+		SELECT ID FROM USERINFO WHERE ID = #{id}
+	</select>
+	
+	<select id="login" parameterType="Map" resultType="LoginDto">
+		SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS, ROLE, DELFLAG 
+		FROM USERINFO 
+		WHERE ID = #{id} AND PASSWORD = #{password} AND DELFLAG = 'N'
+	</select>
+	
+	<select id="getUserInfo" parameterType="String" resultType="LoginDto">
+		SELECT ID, PASSWORD, NAME, EMAIL, ADDRESS FROM USERINFO WHERE ID = #{id}
+	</select>
+	
+	<update id="inactiveUser" parameterType="String">
+		UPDATE USERINFO SET DELFLAG = 'Y' WHERE ID = #{id}
+	</update>
+	
+	<update id="updateUserInfo" parameterType="LoginDto">
+		UPDATE USERINFO SET NAME = #{name}, 
+		<if test="!password.equals('none')">PASSWORD = #{password},</if> 
+		EMAIL = #{email}, ADDRESS = #{address} WHERE ID = #{id}
+	</update>
+	
+<!-- 	이하 코멘트 관련 쿼리(CommentDto) -->
+	<select id="getCmtMD" parameterType="String" resultType="CommentDto">
+		SELECT MCOMMENT , MLIKE, SUMLIKE, CLIMBC, WISHC
+		FROM (SELECT ROW_NUMBER() OVER (ORDER BY REGDATE) AS RN, NVL(mc.MCOMMENT,'아직 작성된 코멘트가 없습니다.') AS MCOMMENT, mc.REGDATE, 
+				NVL(SUM(mc.MLIKE) OVER(),0) AS SUMLIKE, NVL(mc.MLIKE,0) AS MLIKE, NVL(mc.DELFLAG,'N') AS DELFLAG, NVL(mc.PUBFLAG,'Y') AS PUBFLAG,COUNT(mc.MCOMMENT) OVER() AS CLIMBC , WISHC
+				FROM MNTN_COMMENT mc , 
+					(SELECT mv.MNTN_CODE , COUNT(w2.MNTN_CODE) AS WISHC FROM MNTN_VAL mv , WISHLIST w2 WHERE mv.MNTN_CODE = w2.MNTN_CODE(+)  AND mv.MNTN_CODE = #{mCode} GROUP BY mv.MNTN_CODE) w 
+				WHERE mc.MNTN_CODE(+) = w.MNTN_CODE)
+		WHERE RN BETWEEN 1 AND 5 AND DELFLAG = 'N' AND PUBFLAG = 'Y'
+	</select>
+	
+	<select id="cListDetail" parameterType="String" resultMap="CmtDtoMap">
+		SELECT DISTINCT mc.MNTN_CODE , mv.MNTN_NAME , mv.MNTN_LOC, COUNT(mc.MNTN_CODE) OVER(PARTITION BY mc.MNTN_CODE) as climbc
+		FROM MNTN_COMMENT mc , MNTN_VAL mv
+		WHERE mc.MNTN_code = mv.MNTN_CODE AND mc.ID = #{id}
+	</select>
+	
+	<select id="getCmtListMine" parameterType="String" resultType="CommentDto">
+		SELECT mc.SEQ , mc.MNTN_CODE, mv.MNTN_NAME, mv.MNTN_LOC, mc.MLIKE FROM MNTN_COMMENT mc , MNTN_VAL mv WHERE mc.MNTN_CODE = mv.MNTN_CODE AND mc.ID = #{id} ORDER BY REGDATE
+	</select>
+	
+	<select id="getCmtMine" parameterType="Map" resultType="CommentDto">
+		SELECT mc.SEQ , mv.MNTN_NAME, mv.MNTN_LOC, mc.MLIKE FROM MNTN_COMMENT mc , MNTN_VAL mv WHERE mc.MNTN_CODE = mv.MNTN_CODE AND mc.SEQ = #{seq}
+	</select>
+	
+	<insert id="insertCmt" parameterType="CommentDto">
+		INSERT INTO MNTN_COMMENT VALUES(MNTN_COMMENT_SEQ.NEXTVAL, #{mntn_code}, #{id}, #{mcomment}, #{mlike}, SYSDATE, 'N', #{pubflag}, 0, 
+		<choose>
+			<when test="sch_seq!=null">
+				#{sch_seq}
+			</when>
+			<otherwise>
+				0
+			</otherwise>
+		</choose>
+		)
+	</insert>
+	
+	<!-- 	코멘트는 삭제된 시점에서는 수정 불가능하도록 셋팅 -->
+	<update id="updateCmt" parameterType="CommentDto">
+		UPDATE MNTN_COMMENT SET	
+		
+		<if test="mcomment!=null">
+		MCOMMENT = #{mcomment},
+		</if>
+		<if test="mlike!=null">
+		MLIKE = #{#mlike} , 
+		</if>
+		<if test="pubflag!=null">
+		PUBFLAG = #{pubflag} ,
+		</if>
+		<if test="sch_seq!=null">
+		SCH_SEQ = #{sch_seq}
+		</if>
+		
+		WHERE SEQ = #{seq}
+	</update>
+	
+	<update id="delCmt" parameterType="int">
+		UPDATE MNTN_COMMENT SET DELFLAG = 'Y' WHERE SEQ = #{seq} 
+	</update>
+	
+	
+<!-- 	이하 스케쥴 관련 쿼리 -->
+	<select id="getSchList" parameterType="Map" resultMap="SchDtoMap">
+		SELECT su.SEQ, su.SDATE, su.EDATE, su.MNTN_CODE, mv.MNTN_NAME, su.CLIMBFLAG, su.PUBFLAG 
+		FROM SCHEDULE_U su , MNTN_VAL mv WHERE su.MNTN_CODE = mv.MNTN_CODE AND su.ID = #{id}
+		<if test="yyyyMM!=null">
+			AND (su.SDATE LIKE #{yyyyMM}||'%' OR su.EDATE LIKE #{yyyyMM}||'%')
+		</if>
+	</select>
+	
+	
+	<select id="getSch" parameterType="String" resultMap="SchDtoMap">
+		SELECT su.SEQ, su.SDATE, su.EDATE, su.MNTN_CODE, mv.MNTN_NAME, su.CLIMBFLAG, su.PUBFLAG 
+		FROM SCHEDULE_U su , MNTN_VAL mv 
+		WHERE su.MNTN_CODE = mv.MNTN_CODE AND su.SEQ = #{seq}
+	</select>
+	
+	<select id="getSchNoCmt" parameterType="Map" resultMap="SchDtoMap">
+		SELECT su.SEQ, su.SDATE, su.EDATE, su.MNTN_CODE, mv.MNTN_NAME, mv.MNTN_LOC
+		FROM (SELECT su2.SEQ, su2.ID, su2.SDATE, su2.MNTN_CODE, su2.EDATE, COUNT(mc.SCH_SEQ ) OVER(PARTITION BY su2.SEQ) AS CMTC FROM SCHEDULE_U su2, MNTN_COMMENT mc WHERE su2.SEQ = mc.SCH_SEQ(+)) su , MNTN_VAL mv 
+		WHERE su.MNTN_CODE = mv.MNTN_CODE AND ID = #{id} AND EDATE &lt;= #{today} AND CMTC = 0
+	</select>
+	
+	<insert id="insertSch" parameterType="ScheduleDto">
+		INSERT INTO SCHEDULE_U VALUES(SCHEDULE_U_SEQ.NEXTVAL, #{id}, #{sdate}, #{edate}, #{mntn_code}, #{mcontent}, #{pubflag}, #{climbflag}, 0)
+	</insert>
+	
+	<update id="updateSch" parameterType="ScheduleDto">
+		UPDATE SCHEDULE_U SET 
+		SDATE = #{sdate}, 
+		EDATE = #{edate}, 
+		MNTN_CODE = #{mntn_code}, 
+		CLIMBFLAG = #{climbflag}, 
+		PUBFLAG = #{pubflag}
+		WHERE SEQ = #{seq}
+	</update>
+	
+	<delete id="deleteSch" parameterType="int">
+		DELETE FROM SCHEDULE_U WHERE SEQ = #{seq}
+	</delete>
+	
+	
+<!-- 	이하 위시리스트 관련 쿼리 -->
+	<select id="getMyWish" parameterType="String" resultMap="WishDtoMap">
+		SELECT w.SEQ , w.ID , w.MNTN_CODE , mv.MNTN_NAME , mv.MNTN_LOC FROM WISHLIST w , MNTN_VAL mv WHERE w.MNTN_CODE = mv.MNTN_CODE AND ID = #{id} ORDER BY w.MNTN_CODE ASC
+	</select>
+	
+	<select id="getMntWish" parameterType="Map" resultType="WishDto">
+		SELECT w.SEQ , w.ID , w.MNTN_CODE , mv.MNTN_NAME , mv.MNTN_LOC FROM WISHLIST w , MNTN_VAL mv WHERE w.MNTN_CODE = mv.MNTN_CODE AND ID = #{id} AND w.MNTN_CODE = #{mntn_code}
+	</select>
+	
+	
+	<insert id="addMyWish" parameterType="Map">
+		INSERT INTO WISHLIST VALUES(WISHLIST_SEQ.NEXTVAL, #{id}, #{mntn_code})
+	</insert>
+	
+	<delete id="delMyWish" parameterType="Map">
+		DELETE FROM WISHLIST WHERE ID = #{id} AND mntn_code = #{mntn_code}
+	</delete>
+</mapper>

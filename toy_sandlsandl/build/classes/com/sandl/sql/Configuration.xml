@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 	DB 접속정보 파일 설정 -->
+	<properties resource="com/sandl/sql/db.properties"/>
+	
+<!-- 	변수설정 -->
+	<typeAliases>
+		<typeAlias type="com.sandl.dtos.MntDto" alias="MntDto"/>
+		<typeAlias type="com.sandl.dtos.WishDto" alias="WishDto"/>
+		<typeAlias type="com.sandl.dtos.LoginDto" alias="LoginDto"/>
+		<typeAlias type="com.sandl.dtos.SearchDto" alias="SearchDto"/>
+		<typeAlias type="com.sandl.dtos.CommentDto" alias="CommentDto"/>
+		<typeAlias type="com.sandl.dtos.ScheduleDto" alias="ScheduleDto"/>
+	</typeAliases>
+	
+<!-- 	DB접속 정보 셋팅 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}"/>
+				<property name="url" value="${url}"/>
+				<property name="username" value="${username}"/>
+				<property name="password" value="${password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="com/sandl/sql/SandlMapper.xml"/>
+	</mappers>
+</configuration>
+
+
+
