@@ -120,15 +120,19 @@ public class FindController extends HttpServlet {
 					boolean isS = mdao.updateMntn(toDBList);
 					
 					if(isS) {
-						System.out.println("산정보 DB 입력 성공!!!!!!!!!!");
+						System.out.println("-----산정보 DB 입력 성공-----");
+						list = toDBList;
+						//xom라이브러리는 꼭 넣어주세요!
+						
 					}else {
-						System.out.println("산정보 DB 입력 실패");
+						System.out.println("-----산정보 DB 입력 실패-----");
 					}
+					
+				}else {
+					scount = 0;
+					pcount = 1;
 				}
 				
-				
-				scount = 0;
-				pcount = 1;
 			}
 			
 			
