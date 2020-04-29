@@ -307,4 +307,30 @@ public class MntDao extends SqlMapConfig {
 		
 		return list;
 	}
+	
+	public boolean updateMntn(List<MntDto> list) {
+		SqlSession sqlSession = null;
+		int[] count = new int[list.size()];
+		boolean isS = true;
+		
+		try {
+			sqlSession = getSqlSessionFactory().openSession(false);
+			for(int i = 0; i < list.size(); i++) {
+				count[i] = sqlSession.insert("mdto", list.get(i));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			sqlSession.rollback();
+		} finally {
+			sqlSession.commit();
+			sqlSession.close();
+		}
+		
+		for(int i = 0; i < count.length; i++) {
+			if(count[i] <= 0) {
+				isS = false;
+			}
+		}
+		return isS;
+	}
 }

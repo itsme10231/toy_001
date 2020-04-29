@@ -257,4 +257,12 @@
 	<delete id="delMyWish" parameterType="Map">
 		DELETE FROM WISHLIST WHERE ID = #{id} AND mntn_code = #{mntn_code}
 	</delete>
+	
+	
+	
+<!-- 	이하 DB의 mntn_val 업데이트용 쿼리 -->
+	<insert id="putValue" parameterType="MntDto">
+		INSERT INTO MNTN_VAL VALUES(MNTN_VAL_SEQ.NEXTVAL, ${mntn_name}, ${mntn_loc}, ${mntn_code});
+	</insert>
+
 </mapper>
