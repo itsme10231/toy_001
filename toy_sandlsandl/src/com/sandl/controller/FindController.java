@@ -30,6 +30,7 @@ import com.sandl.utils.Util;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import net.sf.json.xml.XMLSerializer;
 
 
 @WebServlet("/FindController.do")
@@ -90,6 +91,22 @@ public class FindController extends HttpServlet {
 				pcount = (int)Math.ceil(scount/(double)Integer.parseInt(view));
 				map = Paging.pagingValue(pcount, pnum, 5);
 			}else {
+				
+				XMLSerializer xmlS = new XMLSerializer();
+				
+				String serviceN = "mntInfoOpenAPI";
+				String paramN = "searchWrd";
+				String paramV = request.getParameter("mName");
+				
+				StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
+				
+				if(!result.substring(result.lastIndexOf("<totalCount>")+1, result.indexOf("</totalCount>")).equals("0")) {
+					JSONObject jO = (JSONObject)xmlS.read(result.toString());
+					
+					System.out.println(jO);
+				}
+				
+				
 				scount = 0;
 				pcount = 1;
 			}
@@ -114,7 +131,11 @@ public class FindController extends HttpServlet {
 			String paramN = "searchWrd";
 			String paramV = request.getParameter("mName");
 			
-			findMntnApi(serviceN, paramN, paramV, request, response);
+			StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
+			
+			PrintWriter pw = response.getWriter();
+			System.out.println("result:" +result);
+			pw.write(result.toString());
 			
 		} else if(command.equals("findmntnimg")) { //api에서 검색2
 			
@@ -122,7 +143,11 @@ public class FindController extends HttpServlet {
 			String paramN = "mntiListNo";
 			String paramV = request.getParameter("mCode");
 			
-			findMntnApi(serviceN, paramN, paramV, request, response);
+			StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
+			
+			PrintWriter pw = response.getWriter();
+			System.out.println("result:" +result);
+			pw.write(result.toString());
 			
 		} else if(command.equals("findreview")) {
 			
@@ -185,10 +210,10 @@ public class FindController extends HttpServlet {
 	
 	
 	
-	public void findMntnApi(String serviceN, String paramN, String paramV, HttpServletRequest request, HttpServletResponse response) {
+	public StringBuffer findMntnApi(String serviceN, String paramN, String paramV, HttpServletRequest request) {
 
 		String serviceKey = "GAEzoe6c7Vd7igSDi%2F5ShwU1wFgZed%2FZ2xiQy%2FrPn%2FiqPC8xjvXPXj6huvHoewAhF7byR8TVKceLjlq4xyGKBA%3D%3D";
-		StringBuffer result;
+		StringBuffer result = new StringBuffer(); 
 		System.out.println(paramV);
 
 		try {
@@ -205,26 +230,36 @@ public class FindController extends HttpServlet {
 			BufferedReader br = new BufferedReader(isr);
 			
 			String line;
-			result = new StringBuffer(); 
+			
 			
 			while((line = br.readLine()) != null) {
 				result.append(line);
 				result.append("\n");
 			}
 			
-			PrintWriter pw = response.getWriter();
-			System.out.println("result:" +result);
-			pw.write(result.toString());
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		return result;
 	}
 	
 	
 	public void dispatch(String url, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatch = request.getRequestDispatcher(url);
 		dispatch.forward(request, response);
+	}
+	
+	public boolean addMntn(String mName, HttpServletRequest request) {
+		
+		String serviceN = "mntInfoOpenAPI";
+		String paramN = "searchWrd";
+		String paramV = request.getParameter("mName");
+		
+		StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
+		
+		return false;
 	}
 
 }
