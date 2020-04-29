@@ -316,7 +316,7 @@ public class MntDao extends SqlMapConfig {
 		try {
 			sqlSession = getSqlSessionFactory().openSession(false);
 			for(int i = 0; i < list.size(); i++) {
-				count[i] = sqlSession.insert("mdto", list.get(i));
+				count[i] = sqlSession.insert(nameSpace +"insertMntn", list.get(i));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -329,6 +329,7 @@ public class MntDao extends SqlMapConfig {
 		for(int i = 0; i < count.length; i++) {
 			if(count[i] <= 0) {
 				isS = false;
+				break;
 			}
 		}
 		return isS;

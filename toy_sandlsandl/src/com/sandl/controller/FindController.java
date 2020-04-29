@@ -60,7 +60,6 @@ public class FindController extends HttpServlet {
 			int pcount = 0;
 			Map<String, Integer> map = null;
 			
-			
 			String mName = request.getParameter("mName");
 			String mLoc = request.getParameter("mLoc");
 			if(mLoc.equals("all")) {
@@ -86,13 +85,13 @@ public class FindController extends HttpServlet {
 				//
 			}
 			
+			
+			//이 이하로 검색결과가 없을시의 처리
 			if(list.size() != 0 && list != null) {
 				scount = list.get(0).getScount();
 				pcount = (int)Math.ceil(scount/(double)Integer.parseInt(view));
 				map = Paging.pagingValue(pcount, pnum, 5);
 			}else {
-				
-				XMLSerializer xmlS = new XMLSerializer();
 				
 				String serviceN = "mntInfoOpenAPI";
 				String paramN = "searchWrd";
@@ -100,10 +99,31 @@ public class FindController extends HttpServlet {
 				
 				StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
 				
-				if(!result.substring(result.lastIndexOf("<totalCount>")+1, result.indexOf("</totalCount>")).equals("0")) {
-					JSONObject jO = (JSONObject)xmlS.read(result.toString());
+				if(!result.substring(result.indexOf("<totalCount>")+12, result.indexOf("</totalCount>")).equals("0")) {
+					XMLSerializer xmlS = new XMLSerializer();
+					List<MntDto> toDBList = new ArrayList<>();
 					
-					System.out.println(jO);
+					JSONObject jO = (JSONObject)xmlS.read(result.toString());
+					JSONArray jArr = jO.getJSONObject("body").getJSONArray("items");
+					
+					for(int i = 0; i < jArr.size(); i++) {
+						MntDto addDto = new MntDto();
+						JSONObject thisO = (JSONObject)jArr.get(i);
+						
+						addDto.setMntn_name(thisO.getString("mntiname"));
+						addDto.setMntn_loc(thisO.getString("mntiadd"));
+						addDto.setMntn_code(Integer.parseInt(thisO.getString("mntilistno")));
+						System.out.println(addDto);
+						toDBList.add(addDto);
+					}
+					
+					boolean isS = mdao.updateMntn(toDBList);
+					
+					if(isS) {
+						System.out.println("산정보 DB 입력 성공!!!!!!!!!!");
+					}else {
+						System.out.println("산정보 DB 입력 실패");
+					}
 				}
 				
 				
@@ -251,15 +271,6 @@ public class FindController extends HttpServlet {
 		dispatch.forward(request, response);
 	}
 	
-	public boolean addMntn(String mName, HttpServletRequest request) {
-		
-		String serviceN = "mntInfoOpenAPI";
-		String paramN = "searchWrd";
-		String paramV = request.getParameter("mName");
-		
-		StringBuffer result = findMntnApi(serviceN, paramN, paramV, request);
-		
-		return false;
-	}
+
 
 }
